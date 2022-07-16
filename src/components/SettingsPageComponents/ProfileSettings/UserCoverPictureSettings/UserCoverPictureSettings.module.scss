@@ -1,0 +1,52 @@
+$dayBackground: #FFFFFF;
+$nightBackground: #181818;
+$dayText: #000000;
+$nightText: #EEEEEE;
+$highlight: #EE0B88;
+$border: #E5E5E5;
+$darkerBorder: #BBBBBB;
+$nightBorder: #666666;
+$hover: #E8E8E8; 
+$hoverNight: #383838;
+$dimText: #888888;
+$buttonBackground: #E0E0E0;
+$buttonText: #333333;
+$buttonNightBackground: #444444;
+$buttonDisabled: #DDDDDD;
+
+.wrapper{
+    display: flex;
+    align-items: flex-start;
+    margin: 10px 0;
+    font-family: 'Noto Sans Display', sans-serif;
+}
+
+.image{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 20px;
+
+    &Caption{
+        font-weight: 300;
+        font-size: 12pt;
+        margin-bottom: 10px;
+    }
+    
+    &Preview{
+        width: 450px;
+        height: 150px;
+        object-fit: cover;
+    }
+}
+
+.controls{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    & > *{
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}

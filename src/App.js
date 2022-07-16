@@ -1,25 +1,73 @@
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { getToken, loginUser, getUserInfo } from './redux/AuthReducer';
+import { connect } from 'react-redux';
+import { useEffect } from 'react';
+import { AuthAPI } from './api/AuthApi';
+import Preloader from './components/MinorComponents/Preloader/Preloader';
+import Main from './pages/Main/Main';
+import MainUnlogged from './pages/MainUnlogged/MainUnlogged';
 
-function App() {
+function App({token, isAuthenticated, getToken, loginUser, getUserInfo}) {
+  const firstLogin = localStorage.getItem("firstLogin");
+
+  useEffect(() => {
+    if(firstLogin){
+      const acquireAccessToken = async () => {
+        const res = await AuthAPI.getAccessToken();
+        getToken(res.accessToken);
+      }
+      acquireAccessToken();
+    }
+  }, [isAuthenticated, getToken, firstLogin]);
+
+  useEffect(() => {
+    if(token){
+      const acquireUserData = async () => {
+        loginUser();
+        const res = await AuthAPI.getUserData(token);
+        getUserInfo(res);
+      }
+      acquireUserData();
+    }
+  }, [token, loginUser, getUserInfo])
+
+  if(!firstLogin){
+    return (
+      <BrowserRouter>
+        <Routes>
+          <Route path="/*" element={<MainUnlogged/>}/> 
+        </Routes>
+      </BrowserRouter>
+    )
+  }
+
+  if(firstLogin && !isAuthenticated){
+    return <Preloader/>
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <BrowserRouter>
+      <Routes>
+        <Route path="/*" element={<Main/>}/> 
+      </Routes>
+    </BrowserRouter>
+  )
 }
 
-export default App;
+const mapStateToProps=(state)=>{
+  return{
+    token: state.auth.token,
+    isAuthenticated: state.auth.isAuthenticated,
+  }
+}
+
+const mapDispatchToProps=(dispatch)=>{
+  return {
+    getToken: (token) => dispatch(getToken(token)),
+    loginUser: () => dispatch(loginUser()),
+    getUserInfo: (data) => dispatch(getUserInfo(data))
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);

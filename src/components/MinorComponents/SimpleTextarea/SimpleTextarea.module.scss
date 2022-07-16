@@ -1,0 +1,63 @@
+$dayBackground: #FFFFFF;
+$nightBackground: #181818;
+$dayText: #000000;
+$nightText: #EEEEEE;
+$highlight: #EE0B88;
+$border: #E5E5E5;
+$darkerBorder: #BBBBBB;
+$nightBorder: #666666;
+$hover: #E8E8E8; 
+$hoverNight: #383838;
+$dimText: #888888;
+$buttonBackground: #E0E0E0;
+$buttonText: #333333;
+$buttonNightBackground: #444444;
+$buttonDisabled: #DDDDDD;
+
+.input{
+    margin: 10px 0;
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid $darkerBorder;
+    background-color: $dayBackground;
+    padding: 5px 15px;
+    width: 100%;
+    height: 100px;
+    font-family: 'Noto Sans Display', sans-serif;
+    font-weight: 300;
+    font-size: 12pt;
+    resize: none;
+    transition: background-color 0.3s linear, color 0.3s linear, border-color 0.3s linear;
+
+    &:focus{
+        border-bottom: 1px solid $highlight;
+
+        &::placeholder{
+            color: $highlight;
+        }
+    }
+
+    &::placeholder{
+        font-family: 'Noto Sans Display', sans-serif;
+        color: $dimText;
+        font-size: 12pt;
+        font-style: italic;
+        font-weight: 300;
+        letter-spacing: 1px;
+    }
+}
+
+.night.input{
+    border-bottom: 1px solid $nightBorder;
+    color: $nightText;
+    background-color: $nightBackground;
+    transition: background-color 0.3s linear, color 0.3s linear, border-color 0.3s linear;
+
+    &:focus{
+        border-bottom: 1px solid $highlight;
+
+        &::placeholder{
+            color: $highlight;
+        }
+    }
+}

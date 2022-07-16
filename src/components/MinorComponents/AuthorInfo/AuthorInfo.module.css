@@ -1,0 +1,40 @@
+.author {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 20px;
+  cursor: pointer;
+  color: #000000;
+  text-decoration: none;
+  transition: color 0.3s linear;
+}
+.author:hover {
+  color: #ee0b88;
+}
+.author:hover .authorAvatar {
+  border: 3px solid #ee0b88;
+}
+.authorAvatar {
+  width: 50px;
+  height: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #BBBBBB;
+  margin-right: 10px;
+  transition: border-color 0.3s linear;
+}
+.authorUsername {
+  font-weight: 500;
+  font-size: 12pt;
+}
+
+.night {
+  color: #EEEEEE;
+  transition: color 0.3s linear;
+}
+
+.night .authorAvatar {
+  border: 3px solid #666666;
+  transition: border-color 0.3s linear;
+}/*# sourceMappingURL=AuthorInfo.module.css.map */

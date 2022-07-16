@@ -1,0 +1,114 @@
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.pageHeader{
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex: 2
+}
+
+.logoIcon{
+    color: #ee0b88;
+    font-size: 28pt !important;
+    margin-right: 10px;
+}
+
+.logoText{
+    font-weight: 300;
+    font-size: 20pt;
+    cursor: default;
+}
+
+.search{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex: 7;
+}
+
+.input{
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid #000000;
+    padding: 5px 15px;
+    width: 100%;
+    min-width: 300px;
+    max-width: 900px;
+    font-family: 'Noto Sans Display', sans-serif;
+    font-weight: 300;
+    font-size: 12pt;
+}
+
+.input::placeholder{
+    font-style: italic;
+}
+
+.input:focus::placeholder{
+    color: #ee0b88;
+}
+
+.input:focus{
+    border-bottom: 1px solid #ee0b88;
+}
+
+.controlGroup{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 3;
+}
+
+.control{
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: #000000;
+    text-decoration: none;
+}
+
+.active{
+    color: #ee0b88;
+}
+
+.control:hover{
+    color: #ee0b88;
+}
+
+.controlIcon{
+    font-size: 18pt;
+    margin-right: 5px;
+}
+
+.controlCaption{
+    font-style: 12pt;
+    font-weight: 500;
+}
+
+.content{
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.contentLeft{
+    flex: 9;
+    margin: 10px;
+}
+
+.contentRight{
+    flex: 3;
+    margin: 10px;
+}

@@ -1,0 +1,11 @@
+$dimText: #888888;
+
+.notice{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: $dimText;
+    font-size: 10pt;
+    cursor: default;
+}

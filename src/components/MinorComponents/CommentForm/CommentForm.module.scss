@@ -1,0 +1,66 @@
+$dayBackground: #FFFFFF;
+$nightBackground: #181818;
+$dayText: #000000;
+$nightText: #EEEEEE;
+$highlight: #EE0B88;
+$border: #E5E5E5;
+$darkerBorder: #BBBBBB;
+$nightBorder: #666666;
+$hover: #E8E8E8; 
+$hoverNight: #383838;
+$dimText: #888888;
+$buttonNightText: #EEEEEE;
+$buttonNightBackground: #444444;
+
+.wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.avatar{
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.button{
+    box-sizing: border-box;
+    width: 48px !important;
+    height: 48px;
+    padding: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 0;
+    outline: 0;
+    color: #333333;
+    background-color: #E0E0E0;
+    cursor: pointer;
+
+    &:hover{
+        background-color: $highlight;
+        color: $dayBackground;
+    }
+
+    &Icon{
+        width: 24px;
+        height: 24px;
+    }
+}
+
+.night .button{
+    color: $buttonNightText;
+    background-color: $buttonNightBackground;
+
+    &:hover{
+        color: $dayBackground;
+        background-color: $highlight;
+    }
+}

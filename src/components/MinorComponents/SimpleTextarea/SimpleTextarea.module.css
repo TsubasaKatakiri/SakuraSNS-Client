@@ -1,0 +1,70 @@
+.input {
+  margin: 10px 0;
+  border: 0;
+  outline: 0;
+  border-bottom: 1px solid #BBBBBB;
+  background-color: #FFFFFF;
+  padding: 5px 15px;
+  width: 100%;
+  height: 100px;
+  font-family: "Noto Sans Display", sans-serif;
+  font-weight: 300;
+  font-size: 12pt;
+  resize: none;
+  transition: background-color 0.3s linear, color 0.3s linear, border-color 0.3s linear;
+}
+.input:focus {
+  border-bottom: 1px solid #EE0B88;
+}
+.input:focus::-moz-placeholder {
+  color: #EE0B88;
+}
+.input:focus:-ms-input-placeholder {
+  color: #EE0B88;
+}
+.input:focus::placeholder {
+  color: #EE0B88;
+}
+.input::-moz-placeholder {
+  font-family: "Noto Sans Display", sans-serif;
+  color: #888888;
+  font-size: 12pt;
+  font-style: italic;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+.input:-ms-input-placeholder {
+  font-family: "Noto Sans Display", sans-serif;
+  color: #888888;
+  font-size: 12pt;
+  font-style: italic;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+.input::placeholder {
+  font-family: "Noto Sans Display", sans-serif;
+  color: #888888;
+  font-size: 12pt;
+  font-style: italic;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.night.input {
+  border-bottom: 1px solid #666666;
+  color: #EEEEEE;
+  background-color: #181818;
+  transition: background-color 0.3s linear, color 0.3s linear, border-color 0.3s linear;
+}
+.night.input:focus {
+  border-bottom: 1px solid #EE0B88;
+}
+.night.input:focus::-moz-placeholder {
+  color: #EE0B88;
+}
+.night.input:focus:-ms-input-placeholder {
+  color: #EE0B88;
+}
+.night.input:focus::placeholder {
+  color: #EE0B88;
+}/*# sourceMappingURL=SimpleTextarea.module.css.map */

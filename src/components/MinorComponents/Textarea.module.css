@@ -1,0 +1,28 @@
+.textarea{
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #555555;
+    outline: none;
+    resize: none;
+    font-family: 'Noto Sans Display', sans-serif;
+    font-weight: 400;
+    color: #555555;
+    font-size: 12pt;
+}
+
+.textarea:focus{
+    border: 1px solid #ee0b88;
+}
+
+.textarea::placeholder{
+    font-family: 'Noto Sans Display', sans-serif;
+    color: #888888;
+    font-weight: 200;
+    font-size: 12pt;
+    font-style: italic;
+}
+
+.textarea:focus::placeholder{
+    color: #ee0b88;
+}

@@ -1,0 +1,93 @@
+$dayBackground: #FFFFFF;
+$nightBackground: #181818;
+$dayText: #000000;
+$nightText: #EEEEEE;
+$highlight: #ee0b88;
+$border: #E5E5E5;
+$darkerBorder: #BBBBBB;
+$nightBorder: #666666;
+$dimText: #888888;
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Noto Sans Display', sans-serif;
+    width: 100%;
+}
+
+.pageHeader{
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logoIcon{
+    color: #ee0b88;
+    font-size: 28pt !important;
+    margin-right: 10px;
+}
+
+.logoText, .header{
+    font-weight: 200;
+    font-size: 20pt;
+    letter-spacing: 0.5px;
+}
+
+.controlGroup{
+    display: flex;
+}
+
+.control{
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: #000000;
+    text-decoration: none;
+}
+
+.active{
+    color: #ee0b88;
+}
+
+.control:hover{
+    color: #ee0b88;
+}
+
+.controlIcon{
+    font-size: 18pt !important;
+    margin-right: 5px;
+}
+
+.controlCaption{
+    font-style: 12pt;
+    font-weight: 500;
+}
+
+.pageMain{
+    border: 1px solid $border;
+    background-color: $dayBackground;
+    color: $dayText;
+    transition: background-color 0.3s linear, color 0.3s linear, border-color 0.3s linear;
+    min-height: calc(100vh - 120px - 30px);
+    padding: 5px;
+    margin: 10px;
+}
+
+.modalActive{
+    overflow-y: hidden;
+}
+
+.night .pageMain{
+    border-color: $nightBorder;
+    background-color: $nightBackground;
+    color: $nightText;
+    transition: background-color 0.3s linear, color 0.3s linear, border-color 0.3s linear;
+}

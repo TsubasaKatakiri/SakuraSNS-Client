@@ -1,0 +1,100 @@
+$dayBackground: #FFFFFF;
+$nightBackground: #181818;
+$dayText: #000000;
+$nightText: #EEEEEE;
+$highlight: #ee0b88;
+$border: #E5E5E5;
+$darkerBorder: #BBBBBB;
+$nightBorder: #666666;
+$dimText: #888888;
+
+.wrapper{
+    width: calc(100% - 300px);
+    padding: 10px;
+    font-family: 'Noto Sans Display', sans-serif;
+}
+
+.content{
+    padding: 10px 20px;
+    background-color: $dayBackground;
+    border: 1px solid $border;
+    color: $dayText;
+    transition: background-color 0.3s linear, border-color 0.3s linear;
+}
+
+.header{
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    min-width: 150px;
+
+    &Icon{
+        color: $highlight;
+        font-size: 28pt !important;
+        margin-right: 10px;
+    }
+    
+    &Text{
+        font-weight: 200;
+        font-size: 20pt;
+        letter-spacing: 0.5px;
+    }
+}
+
+.control{
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: $dayText;
+    text-decoration: none;
+
+
+    &Icon{
+        font-size: 18pt;
+        margin-right: 5px;
+    }
+    
+    &Caption{
+        font-size: 12pt;
+        font-weight: 500;
+    }
+
+    &:hover{
+        color: $highlight;
+    }
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.categoryHeader{
+    font-weight: 200;
+    font-size: 17pt;
+    letter-spacing: 0.5px;
+}
+
+.night .content{
+    background-color: $nightBackground;
+    border: 1px solid $nightBorder;
+    color: $nightText;
+    transition: background-color 0.3s linear, border-color 0.3s linear;
+}
+
+.night .control{
+    color: $dimText;
+
+    &:hover{
+        color: $highlight;
+    }
+}

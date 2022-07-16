@@ -1,0 +1,1 @@
+{"version":3,"sources":["WidgetShell.module.scss","WidgetShell.module.css"],"names":[],"mappings":"AAgBA;EACI,WAAA;EACA,cAAA;EACA,aAAA;EACA,4CAAA;EACA,yBArBY;EAsBZ,cApBM;EAqBN,yBAAA;EACA,qFAAA;ACfJ;ADiBI;EACI,aAAA;ACfR;ADkBI;EACI,gBAAA;AChBR;ADmBI;EACI,SAAA;ACjBR;;ADqBA;EACI,yBAvCc;EAwCd,cAtCQ;EAuCR,qBAnCU;EAoCV,qFAAA;AClBJ","file":"WidgetShell.module.css"}

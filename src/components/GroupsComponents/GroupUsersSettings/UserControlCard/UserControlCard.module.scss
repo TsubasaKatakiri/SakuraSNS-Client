@@ -1,0 +1,75 @@
+$dayBackground: #FFFFFF;
+$nightBackground: #181818;
+$dayText: #000000;
+$nightText: #EEEEEE;
+$highlight: #ee0b88;
+$border: #E5E5E5;
+$darkerBorder: #BBBBBB;
+$nightBorder: #666666;
+$hover: #E8E8E8; 
+$hoverNight: #383838;
+$dimText: #888888;
+$buttonBackground: #E0E0E0;
+$buttonText: #333333;
+$buttonNightBackground: #444444;
+
+.wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid $border;
+    background-color: $dayBackground;
+    color: $dayText;
+    transition: background-color 0.3s linear, color 0.3s linear, border-color 0.3s linear;
+    margin: 10px 0;
+}
+
+.userInfo{
+    display: flex;
+    align-items: center;
+}
+
+.avatar{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.stringsContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.username{
+    font-size: 14pt;
+    font-weight: 600;
+}
+
+.role{
+    font-size: 11pt;
+    color: $dimText;
+    font-weight: 500;
+}
+
+.functions{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    & > *{
+        margin-left: 10px;
+    }
+}
+
+.night.wrapper{
+    border-color: $nightBorder;
+    background-color: $nightBackground;
+    color: $nightText;
+    transition: background-color 0.3s linear, color 0.3s linear, border-color 0.3s linear;
+}

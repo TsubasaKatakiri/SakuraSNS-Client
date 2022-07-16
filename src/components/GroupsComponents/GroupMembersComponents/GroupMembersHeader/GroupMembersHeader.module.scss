@@ -1,0 +1,112 @@
+$dayBackground: #FFFFFF;
+$nightBackground: #181818;
+$dayLowerBackground: #F9F9F9;
+$nightLowerBackground: #222222;
+$dayText: #000000;
+$nightText: #EEEEEE;
+$highlight: #ee0b88;
+$border: #E5E5E5;
+$darkerBorder: #BBBBBB;
+$nightBorder: #666666;
+$dimText: #888888;
+
+.wrapper{
+    position: sticky;
+    top: 60px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: $dayLowerBackground;
+    transition: background-color 0.3s linear;
+}
+
+.content{
+    margin: 10px;
+    margin-bottom: 0;
+    padding: 10px 20px;
+    height: 60px;
+    background-color: $dayBackground;
+    color: $dayText;
+    border: 1px solid $border;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color 0.3s linear, color 0.3s linear, border-color 0.3s linear;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    min-width: 250px;
+
+    &Icon{
+        color: $highlight;
+        font-size: 28pt !important;
+        margin-right: 10px;
+    }
+
+    &Text{
+        font-weight: 200;
+        font-size: 20pt;
+        letter-spacing: 0.5px;
+    }
+}
+
+.controlGroup{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 200px;
+}
+
+.control{
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: $dayText;
+    text-decoration: none;
+
+
+    &Icon{
+        font-size: 18pt;
+        margin-right: 5px;
+    }
+    
+    &Caption{
+        font-size: 12pt;
+        font-weight: 500;
+    }
+
+    &:hover{
+        color: $highlight;
+    }
+}
+
+.control.active{
+    color: $highlight !important;
+}
+
+.night.wrapper{
+    background-color: $nightLowerBackground;
+    transition: background-color 0.3s linear;
+}
+
+.night .content{
+    background-color: $nightBackground;
+    color: $nightText;
+    border: 1px solid $nightBorder;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color 0.3s linear, color 0.3s linear, border-color 0.3s linear;
+}
+
+.night .control{
+    color: $dimText;
+
+    &:hover{
+        color: $highlight;
+    }
+}

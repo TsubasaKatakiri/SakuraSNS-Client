@@ -1,0 +1,72 @@
+$dayBackground: #FFFFFF;
+$nightBackground: #181818;
+$dayText: #000000;
+$nightText: #EEEEEE;
+$highlight: #ee0b88;
+$border: #E5E5E5;
+$darkerBorder: #BBBBBB;
+$nightBorder: #666666;
+$hover: #E8E8E8; 
+$hoverNight: #383838;
+$dimText: #888888;
+
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 5px;
+    cursor: pointer;
+    text-decoration: none;
+
+    &:hover{
+        background-color: $hover;
+    
+        .name{
+            color: $highlight !important;
+        }
+    }
+}
+
+.previewContainer{
+    width: 120px;
+    height: 120px;
+    margin-right: 10px;
+}
+
+.previewImage{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: $dayText;
+}
+
+.previewPlaceholder{
+    width: 100%;
+    height: 100%;
+    background-color: $dimText;
+}
+
+.name{
+    font-weight: 500;
+    font-size: 12pt;
+    color: $dayText;
+}
+
+.infoString{
+    color: $dimText;
+    font-weight: 400;
+    font-size: 10pt;
+    margin-right: 10px;
+}
+
+.night.wrapper:hover{
+    background-color: $hoverNight;
+}
+
+.night{
+    .name{
+        color: $dimText;
+    }
+}

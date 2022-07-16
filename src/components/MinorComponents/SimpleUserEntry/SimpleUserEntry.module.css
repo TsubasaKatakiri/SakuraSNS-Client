@@ -1,0 +1,51 @@
+.link{
+    text-decoration: none;
+    color: #000000;
+}
+
+.friend{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.friendAvatar{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #FFFFFF;
+}
+
+.friendInfo{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Noto Sans Display', sans-serif;
+}
+
+.friendName{
+    font-size: 12pt;
+    font-weight: 600;
+}
+
+.friendOnline{
+    color: #555555;
+    font-size: 10pt;
+    font-weight: 400;
+}
+
+.friend:hover .friendAvatar{
+    border: 3px solid #ee0b88;
+}
+
+.friend:hover .friendName{
+    color: #ee0b88;
+}
+
+.friend:hover .friendOnline{
+    color: #e754a5;
+}

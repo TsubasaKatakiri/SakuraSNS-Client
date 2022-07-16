@@ -1,0 +1,26 @@
+$dayBackground: #FFFFFF;
+$nightBackground: #181818;
+$dayText: #000000;
+$nightText: #EEEEEE;
+$highlight: #ee0b88;
+$border: #E5E5E5;
+$darkerBorder: #BBBBBB;
+$nightBorder: #666666;
+$dimText: #888888;
+
+.wrapper{
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid $border;
+    transition: border-color 0.3s linear;
+}
+
+.header{
+    font-size: 15pt;
+    font-weight: 500;
+}
+
+.night.wrapper{
+    border-top: 1px solid $nightBorder;
+    transition: border-color 0.3s linear;
+}

@@ -1,0 +1,121 @@
+$dayBackground: #FFFFFF;
+$nightBackground: #181818;
+$dayText: #000000;
+$nightText: #EEEEEE;
+$highlight: #ee0b88;
+$border: #E5E5E5;
+$darkerBorder: #BBBBBB;
+$nightBorder: #666666;
+$dimText: #888888;
+$hoverIcon: #444444;
+
+.message{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+
+    &Top{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+    }
+
+    &Bottom{
+        display: flex;
+        flex-direction: row;
+        font-size: 10pt;
+        margin-top: 10px;
+        margin-left: 60px;
+        color: $dimText;
+    }
+
+    &Content{
+        margin-left: 10px;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: $border;
+        max-width: 60%;
+        text-align: justify;
+        transition: background-color 0.3s linear; 
+    }
+
+    &Avatar{
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+}
+
+.own.message{
+    align-items: flex-end;
+
+    &Top{
+        flex-direction: row-reverse;
+    }
+
+    &Content{
+        background-color: $highlight !important;
+        color: $dayBackground !important;
+        margin-left: 0;
+        margin-right: 10px;
+    }
+
+    &Bottom{
+        margin-left: 0;
+        margin-right: 60px;
+    }
+}
+
+.optionsBar{
+    border-radius: 22px;
+    height: 44px;
+    margin-right: 20px;
+    background-color: $dayBackground;
+    border: 2px solid $darkerBorder
+}
+
+.option{
+    color: $dimText;
+    height: 34px !important;
+    width: 34px !important;
+    margin: 3px;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+
+    &:hover{
+        background-color: $darkerBorder;
+        color: $hoverIcon;
+    }
+
+    &:active{
+        color: $dayBackground;
+        background-color: $highlight;
+    }
+}
+
+.night .messageContent{
+    background-color: $nightBorder;
+    transition: background-color 0.3s linear; 
+}
+
+.night .optionsBar{
+    background-color: $nightBackground;
+    border: 2px solid $nightBorder
+} 
+
+.night .option{
+    color: $nightBorder;
+
+    &:hover{
+        background-color: $nightBorder;
+        color: $hoverIcon;
+    }
+
+    &:active{
+        color: $dayBackground;
+        background-color: $highlight;
+    }
+}

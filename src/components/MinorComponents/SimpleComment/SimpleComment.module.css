@@ -1,0 +1,73 @@
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin: 15px 0;
+}
+
+.commentHeader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 5px;
+}
+
+.commentInfo{
+    display: flex;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.commentTime{
+    font-weight: 300;
+    font-size: 11pt;
+    font-style: italic;
+}
+
+.commentMain{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.commentText{
+    font-size: 12pt;
+    font-weight: 300;
+}
+
+.likeDislikeContainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.controls{
+    display: flex;
+    align-items: center;
+}
+
+.control{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.control:first-child{
+    margin-left: 0;
+}
+
+.icon{
+    font-size: 14pt !important;
+    color: #666666;
+}
+
+.control:hover{
+    color: #ee0b88;
+}
+
+.control:hover .icon{
+    color: #ee0b88;
+}

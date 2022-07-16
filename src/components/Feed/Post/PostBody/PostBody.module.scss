@@ -1,0 +1,46 @@
+$dayBackground: #FFFFFF;
+$nightBackground: #181818;
+$dayText: #000000;
+$nightText: #EEEEEE;
+$highlight: #EE0B88;
+$border: #E5E5E5;
+$darkerBorder: #BBBBBB;
+$nightBorder: #666666;
+$hover: #E8E8E8; 
+$hoverNight: #383838;
+$dimText: #888888;
+
+.wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: $dayText;
+    transition: color 0.3s linear;
+}
+
+.locationText{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: $highlight;
+    font-weight: 400;
+    font-style: 12px;
+    text-transform: uppercase;
+}
+
+.postText{
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.mediafileContainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.night.wrapper{
+    color: $nightText;
+    transition: color 0.3s linear;
+}

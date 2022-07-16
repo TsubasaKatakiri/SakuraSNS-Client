@@ -1,0 +1,8 @@
+export const GET_EVENT_PROGRESS = 'GET_EVENT_PROGRESS';
+export const GET_EVENT_SUCCESS = 'GET_EVENT_SUCCESS';
+export const GET_EVENT_FAIL = 'GET_EVENT_FAIL';
+export const RESET_EVENT = 'RESET_EVENT';
+export const UPDATE_EVENT = 'UPDATE_EVENT';
+export const JOIN_EVENT = 'JOIN_EVENT';
+export const LEAVE_EVENT = 'LEAVE_EVENT';
+export const TOGGLE_JOIN_EVENT = 'TOGGLE_JOIN_EVENT';

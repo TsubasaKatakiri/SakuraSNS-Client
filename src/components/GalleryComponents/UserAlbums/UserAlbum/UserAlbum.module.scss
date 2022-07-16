@@ -1,0 +1,54 @@
+$dayBackground: #FFFFFF;
+$nightBackground: #181818;
+$dayText: #000000;
+$nightText: #EEEEEE;
+$highlight: #ee0b88;
+$border: #E5E5E5;
+$darkerBorder: #BBBBBB;
+$nightBorder: #666666;
+$dimText: #888888;
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Noto Sans Display', sans-serif;
+    width: 100%;
+}
+
+.pageMain{
+    border: 1px solid $border;
+    background-color: $dayBackground;
+    color: $dayText;
+    transition: background-color 0.3s linear, color 0.3s linear, border-color 0.3s linear;
+    min-height: calc(100vh - 120px - 30px);
+    margin: 10px;
+}
+
+.message{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: $dimText;
+    font-size: 10pt;
+    cursor: default;
+}
+
+.listSection{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+
+.modalActive{
+    overflow-y: hidden;
+}
+
+.night .pageMain{
+    border-color: $nightBorder;
+    background-color: $nightBackground;
+    color: $nightText;
+    transition: background-color 0.3s linear, color 0.3s linear, border-color 0.3s linear;
+}

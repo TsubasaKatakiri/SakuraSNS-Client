@@ -1,0 +1,94 @@
+$dayBackground: #FFFFFF;
+$nightBackground: #181818;
+$dayText: #000000;
+$nightText: #EEEEEE;
+$highlight: #EE0B88;
+$border: #E5E5E5;
+$darkerBorder: #BBBBBB;
+$nightBorder: #666666;
+$hover: #E8E8E8; 
+$hoverNight: #383838;
+$dimText: #888888;
+$buttonBackground: #E0E0E0;
+$buttonText: #333333;
+$buttonNightBackground: #444444;
+$buttonDisabled: #DDDDDD;
+
+.wrapper{
+    width: calc(100% - 20px);
+    margin: 10px;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    font-family: 'Noto Sans Display', sans-serif;
+}
+
+.content{
+    background-color: $dayBackground;
+    border: 1px solid $border;
+    color: $dayText;
+    transition: background-color 0.3s linear, color 0.3s linear, border-color 0.3s linear;
+}
+
+.top{
+    width: 100%;
+    height: 250px;
+    position: relative;
+}
+
+.cover{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    &Container{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.avatar{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: $dayBackground;
+    border: 3px solid $dayBackground;
+    border-radius: 50%;
+    transition: background-color 0.3s linear, border-color 0.3s linear;
+
+    &Container{
+        position: absolute;
+        bottom: -125px;
+        left: 25px;
+        z-index: 2;
+        width: 250px;
+        height: 250px;
+    }    
+}
+
+.bottom{
+    width: 100%;
+    padding: 15px 25px 10px;
+    padding-left: 300px;
+    min-height: 130px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.night{
+    .avatar{
+        background-color: $nightBackground;
+        border-color: $nightBackground;
+        transition: background-color 0.3s linear, border-color 0.3s linear;
+    }
+
+    .content{
+        border-color: $nightBorder;
+        background-color: $nightBackground;
+        color: $nightText;
+        transition: background-color 0.3s linear, color 0.3s linear, border-color 0.3s linear;
+    }
+}

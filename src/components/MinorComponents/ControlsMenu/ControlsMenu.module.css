@@ -1,0 +1,15 @@
+.menu, .buttonRow{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.menuButton, .menuButtonMain{
+    margin-left: 20px;
+    color: #555555;
+    cursor: pointer;
+}
+
+.menuButton:hover, .active{
+    color: #ee0b88;
+}

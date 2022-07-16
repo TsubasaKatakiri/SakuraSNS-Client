@@ -1,0 +1,10 @@
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Noto Sans Display', sans-serif;
+    width: 100%;
+}
+
+.modalActive{
+    overflow-y: hidden;
+}

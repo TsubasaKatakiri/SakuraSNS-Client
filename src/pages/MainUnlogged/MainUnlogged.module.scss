@@ -1,0 +1,86 @@
+$dayBackground: #FFFFFF;
+$border: #666666;
+$dayText: #000000;
+$highlight: #ee0b88;
+
+.pageWrapper{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+.pageHeader{
+    height: 60px;
+    width: 100%;
+    background-color: $dayBackground;
+    border-bottom: 1px solid $border;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.logo{
+    font-weight: 200;
+    font-size: 20pt;
+    letter-spacing: 1px;
+    color: $dayText;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Noto Sans Display', sans-serif;
+
+    &:hover{
+        color: $highlight;
+    }
+}
+
+.pageMain{
+    width: 100%;
+    height: calc(100% - 120px);
+    background-image: url("./../../../public/assets/images/loginSpan.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 0;
+    position: relative;
+}
+
+.pageMainFace{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-image: linear-gradient(to right, transparent, $dayBackground);
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.pageContent{
+    z-index: 10;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 150px;
+}
+
+.pageFooter{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    border-top: 1px solid $border;
+}
+
+.footerText{
+    font-family: 'Noto Sans Display', sans-serif;
+    font-weight: 300;
+    color: $highlight;
+}

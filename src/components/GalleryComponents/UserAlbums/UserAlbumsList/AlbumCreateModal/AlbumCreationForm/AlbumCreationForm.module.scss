@@ -1,0 +1,71 @@
+$dayBackground: #FFFFFF;
+$nightBackground: #181818;
+$dayLowerBackground: #F9F9F9;
+$nightLowerBackground: #222222;
+$dayText: #000000;
+$nightText: #EEEEEE;
+$highlight: #ee0b88;
+$border: #E5E5E5;
+$darkerBorder: #BBBBBB;
+$nightBorder: #666666;
+$dimText: #888888;
+
+
+.wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.main, .footer{
+    width: 100%;
+}
+
+.main{
+    border-bottom: 1px solid $darkerBorder;
+    transition: border-color 0.3s linear;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.warning{
+    font-weight: 500;
+    font-size: 11pt;
+    color: $highlight;
+}
+
+.input{
+    margin: 5px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    &Header{
+        font-size: 13pt;
+        font-weight: 300;
+    }
+
+    &Caption{
+        font-size: 11pt;
+        font-weight: 400;
+    }
+}
+
+.formMain .button{
+    margin-left: 0;
+}
+
+.night .main{
+    border-bottom: 1px solid $nightBorder;
+    transition: border-color 0.3s linear;
+}

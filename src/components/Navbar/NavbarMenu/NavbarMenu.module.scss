@@ -1,0 +1,137 @@
+$dayBackground: #FFFFFF;
+$nightBackground: #181818;
+$dayText: #000000;
+$nightText: #888888;
+$highlight: #ee0b88;
+$border: #BBBBBB;
+$nightBorder: #666666;
+$buttonText: #555555;
+$buttonBackground: #E0E0E0;
+$iconDay: #555555;
+$iconNight: #DDDDDD;
+$iconBackground: #AAAAAA;
+
+.wrapper{
+    position: absolute;
+    top: 50px;
+    right: 0;
+    border: 1px solid $border;
+    border-top: 0;
+    background-color: $dayBackground;
+    color: $dayText;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    z-index: 1000;
+    transition: background-color 0.3s linear, color 0.3s linear;
+}
+
+.info{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid $border;
+
+    &Avatar{
+        width: 56px;
+        height: 56px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 3px solid $border; 
+        cursor: pointer;
+        margin-right: 10px;
+
+        &:hover{
+            border: 3px solid $highlight; 
+        }
+    }
+
+    &Strings{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    &Username{
+        font-weight: 500;
+        font-size: 12pt;
+        margin-bottom: 5px;
+    }
+
+    &Email{
+        font-weight: 300;
+        font-size: 10pt;
+    }
+}
+
+.menu{
+    padding-top: 10px;
+    list-style-type: none;
+    width: 100%;
+}
+
+.menuItem{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    text-decoration: none;
+    padding: 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    text-align: center;
+
+    &Content{
+        display: flex;
+        align-items: center;
+    }
+
+    &Icon{
+        width: 32px !important;
+        height: 32px !important;
+        border-radius: 50%;
+        padding: 4px;
+        color: $iconDay;
+        background-color: $iconBackground;
+        margin-right: 10px;
+    }
+
+    &:last-child{
+        margin-bottom: 0;
+    }
+
+    &:hover{
+        color: $dayBackground;
+        background-color: $highlight;
+
+        .menuItemIcon{
+            color: $dayBackground;
+        }
+    }
+
+}
+
+.night{
+    background-color: $nightBackground !important;
+    color: $nightText !important;
+    border-color: $nightBorder;
+    transition: background-color 0.3s linear, color 0.3s linear;
+}
+
+.night .info{
+    border-color: $nightBorder;
+
+    &Avatar{
+        border-color: $nightBorder;
+        background-color: $nightBackground;
+
+        &:hover{
+            border: 3px solid $highlight; 
+        }
+    }
+}

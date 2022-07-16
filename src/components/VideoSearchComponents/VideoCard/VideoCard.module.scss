@@ -1,0 +1,113 @@
+$dayBackground: #FFFFFF;
+$nightBackground: #181818;
+$dayText: #000000;
+$nightText: #EEEEEE;
+$highlight: #EE0B88;
+$border: #E5E5E5;
+$darkerBorder: #BBBBBB;
+$nightBorder: #666666;
+$hover: #E8E8E8; 
+$hoverNight: #383838;
+$dimText: #888888;
+$buttonBackground: #E0E0E0;
+$buttonText: #333333;
+$buttonNightBackground: #444444;
+$buttonDisabled: #DDDDDD;
+
+.wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid $border;
+    background-color: $dayBackground;
+    color: $dayText;
+    transition: background-color 0.3s linear, color 0.3s linear, border-color 0.3s linear;
+
+    &:first-child{
+        margin-top: 0;
+    }
+
+    &:last-child{
+        margin-bottom: 0;
+    }
+
+    &:only-child{
+        margin: 0;
+    }
+}
+
+.video{
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+
+    &Container{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $dayText;
+        margin-right: 20px;
+        width: 400px !important;
+    }
+}
+
+.infoContainer{
+    font-family: 'Noto Sans Display', sans-serif;
+    width: calc(100% - 420px);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.videoName{
+    font-weight: 600;
+    font-size: 14.5pt;
+    margin-bottom: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    color: $dayText;
+
+    &:hover{
+        color: $highlight;
+    }
+}
+
+.videoStats{
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.videoStat{
+    font-weight: 400;
+    color: $dimText;
+    font-size: 10pt;
+    margin-right: 20px;
+}
+
+.videoDescription{
+    margin-top: 5px;
+    font-size: 11pt;
+    font-weight: 400;
+}
+
+.night.wrapper{
+    border-color: $nightBorder;
+    background-color: $nightBackground;
+    color: $nightText;
+    transition: background-color 0.3s linear, color 0.3s linear, border-color 0.3s linear;
+}
+
+.night .videoName{
+    color: $nightText;
+
+    &:hover{
+        color: $highlight;
+    }
+}

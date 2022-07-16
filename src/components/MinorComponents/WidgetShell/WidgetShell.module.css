@@ -1,0 +1,26 @@
+.wrapper {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  font-family: "Noto Sans Display", sans-serif;
+  background-color: #FFFFFF;
+  color: #000000;
+  border: 1px solid #E5E5E5;
+  transition: background-color 0.3s linear, color 0.3s linear, border-color 0.3s linear;
+}
+.wrapper:first-child {
+  margin-top: 0;
+}
+.wrapper:last-child {
+  margin-bottom: 0;
+}
+.wrapper:only-child {
+  margin: 0;
+}
+
+.night.wrapper {
+  background-color: #181818;
+  color: #EEEEEE;
+  border-color: #666666;
+  transition: background-color 0.3s linear, color 0.3s linear, border-color 0.3s linear;
+}/*# sourceMappingURL=WidgetShell.module.css.map */

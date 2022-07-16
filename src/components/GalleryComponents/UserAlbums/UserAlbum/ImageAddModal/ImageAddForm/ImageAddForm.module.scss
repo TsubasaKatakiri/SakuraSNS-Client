@@ -1,0 +1,129 @@
+$dayBackground: #FFFFFF;
+$nightBackground: #181818;
+$dayText: #000000;
+$nightText: #EEEEEE;
+$highlight: #EE0B88;
+$border: #E5E5E5;
+$darkerBorder: #BBBBBB;
+$nightBorder: #666666;
+$hover: #E8E8E8; 
+$hoverNight: #383838;
+$dimText: #888888;
+$buttonBackground: #E0E0E0;
+$buttonText: #333333;
+$buttonNightBackground: #444444;
+$buttonDisabled: #DDDDDD;
+$warning: #EB0000;
+$imageBackground: #000000;
+
+.wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.main, .footer{
+    width: 100%;
+}
+
+.main{
+    border-bottom: 1px solid $darkerBorder;
+    transition: border-color 0.3s linear;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.footer{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.image{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background-color: $imageBackground;
+
+    &Container{
+        margin: 10px;
+        padding: 10px;
+        width: 500px;
+        height: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid $darkerBorder;
+    }
+
+    &Message{
+        color: $darkerBorder;
+        font-weight: 300;
+    }
+}
+
+
+.controlsContainer{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 300px;
+}
+
+
+.warning{
+    font-weight: 500;
+    font-size: 11pt;
+    color: $highlight;
+}
+
+.input{
+    margin: 5px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    &Header{
+        font-size: 13pt;
+        font-weight: 300;
+    }
+
+    &Caption{
+        font-size: 11pt;
+        font-weight: 400;
+    }
+}
+
+.buttonBlock > *{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    margin-right: 0;
+}
+
+.formMain .button{
+    margin-left: 0;
+    margin-top: 10px;
+}
+
+.night .main{
+    border-bottom: 1px solid $nightBorder;
+    transition: border-color 0.3s linear;
+}
+
+.night .image{
+    &Container{
+        border: 1px solid $nightBorder;
+    }
+    
+    &Message{
+        color: $nightBorder;
+    }
+}

@@ -1,0 +1,57 @@
+$dayBackground: #FFFFFF;
+$nightBackground: #181818;
+$dayText: #000000;
+$nightText: #EEEEEE;
+$highlight: #ee0b88;
+$border: #E5E5E5;
+$darkerBorder: #BBBBBB;
+$nightBorder: #666666;
+$dimText: #888888;
+$buttonBackground: #E0E0E0;
+$buttonText: #333333;
+$buttonNightBackground: #444444;
+$buttonDisabled: #DDDDDD;
+
+.wrapper{
+    border-top: 1px solid $darkerBorder;
+    padding-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: border-color 0.3s linear;
+}
+
+.top{
+    width: 100%;
+    height: 110px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.bottom{
+    width: 100%;
+    min-height: 0;
+}
+
+.input{
+    width: calc(100% - 150px);
+}
+
+.controls{
+    width: 150px;
+    height: 100%;
+
+    & > * {
+        margin-right: 0;
+        margin-bottom: 10px;
+    } 
+}
+
+.night.wrapper{
+    border-top: 1px solid $nightBorder;
+    transition: border-color 0.3s linear;
+}

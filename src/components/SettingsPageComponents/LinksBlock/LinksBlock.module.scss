@@ -1,0 +1,108 @@
+$dayBackground: #FFFFFF;
+$nightBackground: #181818;
+$dayText: #000000;
+$nightText: #EEEEEE;
+$highlight: #ee0b88;
+$border: #E5E5E5;
+$darkerBorder: #BBBBBB;
+$nightBorder: #666666;
+$hover: #E8E8E8; 
+$hoverNight: #383838;
+
+.wrapper{
+    width: 300px;
+    padding: 10px;
+    padding-left: 0;
+    position: sticky;
+    top: 60px;
+    height: calc(100vh - 60px);
+    font-family: 'Noto Sans Display', sans-serif;
+}
+
+.list{
+    list-style-type: none;
+
+    &Container{
+        background-color: $dayBackground;
+        padding: 10px 0;
+        border: 1px solid $border;
+        transition: background-color 0.3s linear, color 0.3s linear, border-color 0.3s linear;
+    }
+
+    &Header{
+        padding: 10px 20px;
+    }
+
+    &Item{
+        display: block;
+        position: relative;
+        background-color: $dayBackground;
+        transition: background-color 0.3s linear;
+
+        &:before{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            height: 100%;
+            width: 5px;
+            content: '';
+        }
+
+        &:hover{
+            background-color: $hover;
+            color: $highlight;
+
+            .link{
+                color: $highlight;
+            }
+
+            &:before{
+                background-color: $highlight;
+            }
+        }
+    }
+}
+
+.link{
+    display: block;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: $dayText;
+    text-decoration: none;
+    height: 100%;
+}
+
+.night{
+    color: $nightText !important;
+    transition: color 0.3s linear;
+
+    .list{
+        background-color: $nightBackground;
+        border-color: $nightBorder;
+        transition: background-color 0.3s linear, color 0.3s linear;
+
+        &Container{
+            background-color: $nightBackground;
+            border-color: $nightBorder;
+            transition: background-color 0.3s linear, border-color 0.3s linear;
+        }
+
+        &Item{
+            background-color: $nightBackground;
+            transition: background-color 0.3s linear;
+
+            &:hover{
+                background-color: $hoverNight;
+            }
+        }
+    }
+
+    .link{
+        color: $nightText;
+
+        &:hover{
+            color: $highlight;
+        }
+    }
+}

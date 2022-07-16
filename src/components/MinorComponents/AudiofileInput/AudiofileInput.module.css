@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.fileInput{
+    display: none;
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+
+.filePreview{
+    width: 100%;
+}
+
+.audio{
+    width: 100%;
+    margin-right: 10px;
+}
+
+.button{
+    font-weight: 100;
+    margin-left: 10px;
+    font-size: 12pt;
+    padding: 12px 25px;
+    width: 120px;
+    cursor: pointer;
+    text-align: center;
+    color: #333333;
+    border: 0;
+    outline: 0;
+    background-color: #E0E0E0;
+}
+
+.buttonBlock{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.button:hover{
+    color: #FFFFFF;
+    background-color: #ee0b88;
+}

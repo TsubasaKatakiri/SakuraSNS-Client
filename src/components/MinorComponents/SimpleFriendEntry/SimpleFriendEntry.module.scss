@@ -1,0 +1,98 @@
+$dayBackground: #FFFFFF;
+$nightBackground: #181818;
+$dayText: #000000;
+$nightText: #EEEEEE;
+$highlight: #ee0b88;
+$border: #E5E5E5;
+$darkerBorder: #BBBBBB;
+$nightBorder: #666666;
+$hover: #E8E8E8; 
+$hoverNight: #383838;
+$dimText: #888888;
+$buttonBackground: #E0E0E0;
+$buttonText: #333333;
+$buttonNightBackground: #444444;
+$overlay: #000000e3;
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100px;
+    height: 125px;
+    margin: 10px 0;
+    text-decoration: none;
+}
+
+.avatar{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 3px solid $border;
+    transition: border-color 0.3s linear;
+
+    &Container{
+        width: 80px;
+        height: 80px;
+        position: relative;
+    }
+}
+
+.isOnline{
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    width: 16px;
+    height: 16px;
+    border: 3px solid $border;
+    background-color: $border;
+    border-radius: 50%;
+    transition: background-color 0.3s linear, border-color 0.3s linear;
+}
+
+.online{
+    background-color: $highlight !important;
+}
+
+.username{
+    text-align: center;
+    color: $dayText;
+    font-weight: 500;
+    font-size: 11pt;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: color 0.3s linear;
+}
+
+.wrapper:hover{
+    .avatar{
+        border-color: $highlight !important;
+    }
+
+    .isOnline{
+        border-color: $highlight !important;
+    }
+
+    .username{
+        color: $highlight !important;
+    }
+}
+
+.night{
+    .avatar{
+        border-color: $nightBorder;
+        transition: border-color 0.3s linear;
+    }
+
+    .isOnline{
+        border-color: $nightBorder;
+        background-color: $nightBorder;
+        transition: background-color 0.3s linear, border-color 0.3s linear;
+    }
+
+    .username{
+        color: $dimText;
+        transition: color 0.3s linear;
+    }
+}

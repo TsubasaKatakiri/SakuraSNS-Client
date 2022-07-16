@@ -1,0 +1,68 @@
+.formWrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.inputStyle{
+    margin: 10px 0;
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid #666666;
+    padding: 5px 15px;
+    width: 100%;
+    max-width: 900px;
+    min-width: 300px;
+    font-family: 'Noto Sans Display', sans-serif;
+    font-weight: 300;
+    font-size: 12pt;
+}
+
+.inputStyle::placeholder{
+    font-style: italic;
+}
+
+.inputStyle:focus::placeholder{
+    color: #ee0b88;
+}
+
+.inputStyle:focus{
+    border-bottom: 1px solid #ee0b88;
+}
+
+.errorStyle{
+    border-bottom: 1px solid #eb0000;
+}
+
+.messageStyle{
+    font-size: 10pt;
+    font-style: italic;
+    font-weight: 500;
+    color: #eb0000;
+}
+
+.button{
+    font-weight: 100;
+    font-size: 12pt;
+    padding: 12px 0;
+    width: 150px;
+    margin-left: 10px;
+    cursor: pointer;
+    text-align: center;
+    color: #333333;
+    border: 0;
+    outline: 0;
+    background-color: #E0E0E0;
+}
+
+.button:hover{
+    color: #FFFFFF;
+    background-color: #ee0b88;
+}
+
+.button:disabled{
+    color: #DDDDDD;
+    background-color: #888888;
+    cursor: default;
+}

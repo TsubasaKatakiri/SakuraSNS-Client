@@ -1,0 +1,66 @@
+$dayBackground: #FFFFFF;
+$nightBackground: #181818;
+$dayText: #000000;
+$nightText: #EEEEEE;
+$highlight: #ee0b88;
+$border: #E5E5E5;
+$darkerBorder: #BBBBBB;
+$nightBorder: #666666;
+$dimText: #888888;
+
+.wrapper{
+    padding: 10px;
+    height: 100%;
+}
+
+.header{
+    font-family: 'Noto Sans Display', sans-serif;
+    font-size: 13pt;
+    font-weight: 400;
+    padding: 4px;
+    border-bottom: 1px solid $darkerBorder;
+    margin-bottom: 15px;
+}
+
+.night .header{
+    color: $dimText;
+    border-color: $nightBorder;
+}
+
+.online{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+    padding: 5px;
+
+    &:hover{
+        color: $highlight;
+    }
+}
+
+.avatar{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid $darkerBorder;
+    transition: border-color 0.3s linear;
+}
+
+.name{
+    font-family: 'Noto Sans Display', sans-serif;
+    margin-left: 10px;
+    font-size: 11pt;
+    font-weight: 600;
+}
+
+.online:hover .avatar{
+    border: 3px solid $highlight;
+}
+
+.night .avatar{
+    border: 3px solid $nightBorder;
+    transition: border-color 0.3s linear;
+}

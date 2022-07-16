@@ -1,0 +1,19 @@
+$dimText: #888888;
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    font-family: 'Noto Sans Display', sans-serif;
+    width: 100%;
+}
+
+.message{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 12pt;
+    color: $dimText;
+}
