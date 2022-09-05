@@ -1,0 +1,46 @@
+$dayBackground: #F9F9F9;
+$nightBackground: #222222;
+
+.wrapper{
+    width: 100%;
+    height: 100%;
+}
+
+.page{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: $dayBackground;
+    transition: background-color 0.3s linear;
+
+    &Container{
+        display: flex;
+        flex-direction: row;
+        width: 1400px;
+    }
+
+    &Content{
+        width: calc(100% - 240px);
+    }
+}
+
+.night{
+    .page{
+        background-color: $nightBackground;
+        transition: background-color 0.3s linear;
+    }
+}
+
+@media screen and (max-width: 1400px){
+    .pageContainer{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .page{
+        &Content{
+            width: calc(100% - 80px);
+        }
+    }
+}

@@ -1,0 +1,33 @@
+$dayBackground: #FFFFFF;
+$nightBackground: #181818;
+$dayText: #000000;
+$nightText: #EEEEEE;
+$highlight: #ee0b88;
+$border: #E5E5E5;
+$darkerBorder: #BBBBBB;
+$nightBorder: #666666;
+$dimText: #888888;
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Noto Sans Display', sans-serif;
+    width: 100%;
+}
+
+.content{
+    border: 1px solid $border;
+    background-color: $dayBackground;
+    color: $dayText;
+    transition: background-color 0.3s linear, color 0.3s linear, border-color 0.3s linear;
+    min-height: calc(100vh - 120px - 30px);
+    margin: 10px;
+    padding: 10px;
+}
+
+.night{
+    border-color: $nightBorder;
+    background-color: $nightBackground;
+    color: $nightText;
+    transition: background-color 0.3s linear, color 0.3s linear, border-color 0.3s linear;
+}

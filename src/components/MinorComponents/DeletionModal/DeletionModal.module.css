@@ -1,0 +1,57 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8901960784);
+  z-index: 1000;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  border: 0;
+  transform: translate(-50%, -50%);
+  background-color: #FFFFFF;
+  color: #000000;
+  min-width: 500px;
+  padding: 15px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  transition: background-color 0.3s linear, color 0.3s linear;
+}
+
+.header, .main {
+  border-bottom: 1px solid #E5E5E5;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  transition: border-color 0.3s linear;
+}
+
+.headerText {
+  font-weight: 300;
+  font-size: 16pt;
+}
+
+.caption {
+  font-weight: 300;
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.night.modal {
+  background-color: #181818;
+  color: #888888;
+  transition: background-color 0.3s linear, color 0.3s linear;
+}
+
+.night .header, .night .main {
+  border-bottom: 1px solid #666666;
+  transition: border-color 0.3s linear;
+}/*# sourceMappingURL=DeletionModal.module.css.map */

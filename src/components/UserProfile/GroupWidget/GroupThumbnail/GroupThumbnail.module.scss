@@ -1,0 +1,67 @@
+$dayBackground: #FFFFFF;
+$nightBackground: #181818;
+$dayText: #000000;
+$nightText: #EEEEEE;
+$highlight: #ee0b88;
+$border: #E5E5E5;
+$darkerBorder: #BBBBBB;
+$nightBorder: #666666;
+$hover: #E8E8E8; 
+$hoverNight: #383838;
+$dimText: #888888;
+$buttonBackground: #E0E0E0;
+$buttonText: #333333;
+$buttonNightBackground: #444444;
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 5px;
+    cursor: pointer;
+    text-decoration: none;
+
+    &:hover{
+        background-color: $hover;
+    
+        .name{
+            color: $highlight !important;
+        }
+    }
+}
+
+.previewContainer{
+    width: 64px;
+    height: 64px; 
+    margin-right: 10px;
+}
+
+.image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    background-color: $dayText;
+}
+
+.infoContainer{
+    width: calc(100% - 74px);
+}
+
+.name{
+    font-weight: 500;
+    font-size: 12pt;
+    color: $dayText;
+}
+
+.night.wrapper:hover{
+    background-color: $hoverNight;
+}
+
+.night{
+    .name{
+        color: $dimText;
+    }
+}

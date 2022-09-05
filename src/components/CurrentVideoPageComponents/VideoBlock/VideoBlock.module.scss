@@ -1,0 +1,107 @@
+$dayBackground: #FFFFFF;
+$nightBackground: #181818;
+$dayText: #000000;
+$nightText: #EEEEEE;
+$highlight: #ee0b88;
+$border: #E5E5E5;
+$darkerBorder: #BBBBBB;
+$nightBorder: #666666;
+$dimText: #888888;
+
+
+.wrapper{
+    width: 100%;
+    font-family: 'Noto Sans Display', sans-serif;
+    padding: 0 10px;
+}
+
+.video{
+    width: 100%;
+    aspect-ratio: 16/9;
+    background-color: $dayText;
+
+    &Container{
+        width: 100%;
+    }
+
+    &Info{
+        width: 100%;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+.authorBar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.author{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: $dayText;
+    text-decoration: none;
+
+    &:hover &Name{
+        color: $highlight;
+    }
+
+    &Info{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    &Name{
+        font-weight: 500;
+        font-size: 12pt;
+    }
+    
+    &Followers{
+        font-weight: 400;
+        font-size: 10pt;
+        color: $dimText;
+    }
+
+    &Avatar{
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-right: 16px;
+    }
+}
+
+.description{
+    width: 100%;
+    padding: 10px;
+    padding-left: 80px;
+    border-bottom: 1px solid $darkerBorder;
+
+    &Text{
+        font-weight: 400;
+        font-size: 11pt;
+    }
+}
+
+.commentContainer{
+    margin-top: 10px;
+}
+
+.night{
+    .author{
+        &Name{
+            color: $nightText
+        }
+    }
+
+    .description{
+        border-color: $nightBorder;
+    }
+}

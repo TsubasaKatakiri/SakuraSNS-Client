@@ -1,0 +1,30 @@
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.likeInfo, .dislikeInfo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #000000;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.likeInfo:hover, .dislikeInfo:hover{
+    color: #ee0b88;
+}
+
+.likesCount{
+    margin-left: 5px;
+}
+
+.dislikeInfo{
+    margin-right: 0;
+}
+
+.dislikesCount{
+    margin-left: 5px;
+}

@@ -1,0 +1,50 @@
+$dayBackground: #FFFFFF;
+$nightBackground: #181818;
+$dayText: #000000;
+$nightText: #EEEEEE;
+$highlight: #ee0b88;
+$border: #E5E5E5;
+$darkerBorder: #BBBBBB;
+$nightBorder: #666666;
+$dimText: #888888;
+
+.wrapper{
+    color: $dayText;
+    transition: color 0.3s linear;
+}
+
+.infoBlock{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.infoName{
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    margin-bottom: 5px;
+    font-size: 12pt;
+}
+
+.infoString{
+    font-weight: 300;
+    font-size: 12pt;
+    margin-bottom: 2px;
+}
+
+.infoCategory{
+    font-weight: 400;
+}
+
+.infoIcon{
+    font-size: 24px !important;
+    color: $highlight;
+    margin-right: 10px;
+}
+
+.night.wrapper{
+    color: $nightText;
+    transition: color 0.3s linear;
+}

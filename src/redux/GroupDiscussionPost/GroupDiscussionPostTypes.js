@@ -1,0 +1,7 @@
+export const GET_POSTS_PROGRESS = 'GET_POSTS_PROGRESS';
+export const GET_POSTS_SUCCESS = 'GET_POSTS_SUCCESS';
+export const GET_POSTS_FAIL = 'GET_POSTS_FAIL';
+export const RESET_POSTS = 'RESET_POSTS';
+export const ADD_POST = 'ADD_POST';
+export const DELETE_POST = 'DELETE_POST';
+export const CHANGE_POST_PAGE = 'CHANGE_POST_PAGE';

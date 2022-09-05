@@ -1,0 +1,52 @@
+$dayBackground: #FFFFFF;
+$nightBackground: #181818;
+$dayText: #000000;
+$nightText: #EEEEEE;
+$highlight: #ee0b88;
+$border: #BBBBBB;
+$nightBorder: #666666;
+
+.author{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 20px;
+    cursor: pointer;
+    color: $dayText;
+    text-decoration: none;
+    transition: color 0.3s linear;
+
+    &:hover{
+        color: $highlight;
+    }
+
+    &:hover .authorAvatar{
+        border: 3px solid $highlight;
+    }
+
+    &Avatar{
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        border-radius: 50%;
+        $dayBackground: $dayBackground;
+        border: 3px solid $border;
+        margin-right: 10px;
+        transition: border-color 0.3s linear;
+    }
+
+    &Username{
+        font-weight: 500;
+        font-size: 12pt;
+    }
+}
+
+.night{
+    color: $nightText;
+    transition: color 0.3s linear;
+}
+
+.night .authorAvatar{
+    border: 3px solid $nightBorder;
+    transition: border-color 0.3s linear;
+}

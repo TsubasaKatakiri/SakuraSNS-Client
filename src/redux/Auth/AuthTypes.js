@@ -1,0 +1,10 @@
+export const LOGIN_USER = 'LOGIN_USER';
+export const GET_USER_INFO = 'GET_USER_INFO';
+export const LOGOUT_USER = 'LOGOUT_USER';
+export const GET_TOKEN = 'GET_TOKEN';
+export const SET_USERS = 'SET_USERS';
+export const FOLLOW = 'FOLLOW';
+export const UNFOLLOW = 'UNFOLLOW';
+export const TOGGLE_FOLLOW_PROGRESS = 'TOGGLE_FOLLOW_PROGRESS';
+export const ENABLE_DARK = 'ENABLE_DARK';
+export const DISABLE_DARK = 'DISABLE_DARK';

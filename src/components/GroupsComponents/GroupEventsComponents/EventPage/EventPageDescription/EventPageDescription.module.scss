@@ -1,0 +1,89 @@
+$dayBackground: #FFFFFF;
+$nightBackground: #181818;
+$dayLowerBackground: #F9F9F9;
+$nightLowerBackground: #222222;
+$dayText: #000000;
+$nightText: #EEEEEE;
+$highlight: #ee0b88;
+$border: #E5E5E5;
+$darkerBorder: #BBBBBB;
+$nightBorder: #666666;
+$dimText: #888888;
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 15px;
+}
+
+.infoBlock{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    font-weight: 400;
+
+    &Icon{
+        color: $highlight;
+        font-size: 16pt !important;
+        margin-right: 5px;
+    }
+    
+    &Header{
+        color: $highlight;
+        font-weight: 600;
+    }
+}
+
+.message{
+    color: $dimText;
+    font-weight: 600;
+    font-size: 11pt;
+    display: flex;
+    align-items: center;
+
+    &Icon{
+        font-size: 16pt !important;
+        margin-right: 5px;
+    }
+}
+
+.friend{
+    font-weight: 500;
+    color: $dimText;
+
+    &hover{
+        color: $highlight;
+    }
+
+    &List{
+        font-weight: 300;
+        font-style: italic;
+        font-size: 13pt;
+    }
+}
+
+.description{
+    font-weight: 300;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+.image{
+    width: 100%;
+    max-width: 900px;
+
+    &Container{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

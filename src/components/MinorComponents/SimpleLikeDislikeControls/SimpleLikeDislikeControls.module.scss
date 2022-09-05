@@ -1,0 +1,34 @@
+$dayText: #000000;
+$dimText: #888888;
+$highlight: #EE0B88;
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: $dayText;
+}
+
+.like, .dislike{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 20px;
+
+    &Count{
+        margin-left: 5px;
+    }
+
+    &:hover{
+        color: $highlight;
+    }
+}
+
+.dislike{
+    margin-right: 0;
+}
+
+.night.wrapper{
+    color: $dimText;
+}

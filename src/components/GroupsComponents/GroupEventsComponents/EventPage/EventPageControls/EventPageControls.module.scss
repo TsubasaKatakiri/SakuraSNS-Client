@@ -1,0 +1,41 @@
+$dayBackground: #FFFFFF;
+$nightBackground: #181818;
+$dayLowerBackground: #F9F9F9;
+$nightLowerBackground: #222222;
+$dayText: #000000;
+$nightText: #EEEEEE;
+$highlight: #ee0b88;
+$border: #E5E5E5;
+$darkerBorder: #BBBBBB;
+$nightBorder: #666666;
+$dimText: #888888;
+
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 15px 0;
+    padding-top: 5px;
+    border-bottom: 1px solid $border;
+    transition: border-color 0.3s linear;
+}
+
+.name{
+    font-weight: 500;
+    font-size: 16pt;
+}
+
+.infoString{
+    font-size: 11pt;
+    font-weight: 400;
+    color: $dimText;
+    margin-right: 20px;
+}
+
+.wrapper.night{
+    border-color: $nightBorder;
+    background-color: $nightBackground;
+    color: $nightText;
+    transition: border-color 0.3s linear;
+}

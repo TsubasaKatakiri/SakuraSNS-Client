@@ -1,0 +1,50 @@
+.selectStyle {
+  margin: 10px 0;
+  border: 0;
+  outline: 0;
+  color: #000000;
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #BBBBBB;
+  padding: 5px 15px;
+  width: 100%;
+  font-family: "Noto Sans Display", sans-serif;
+  font-weight: 300;
+  font-size: 12pt;
+  font-style: italic;
+  transition: background-color 0.3s linear, color 0.3s linear, border-color 0.3s linear;
+}
+.selectStyle:focus {
+  border-bottom: 1px solid #EE0B88;
+}
+.selectStyle:disabled {
+  color: #383838;
+  background-color: #BBBBBB;
+  border-bottom: 1px solid #BBBBBB;
+}
+
+.optionStyle {
+  font-style: italic;
+  font-weight: 300;
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
+.night.selectStyle {
+  border-bottom: 1px solid #666666;
+  background-color: #181818;
+  color: #EEEEEE;
+  transition: background-color 0.3s linear, color 0.3s linear, border-color 0.3s linear;
+}
+.night.selectStyle:focus {
+  border-bottom: 1px solid #EE0B88;
+}
+.night.selectStyle:disabled {
+  color: #888888;
+  background-color: #383838;
+  border-bottom: 1px solid #666666;
+}
+
+.night .optionStyle {
+  background-color: #181818;
+  color: #EEEEEE;
+}/*# sourceMappingURL=DropdownMenu.module.css.map */

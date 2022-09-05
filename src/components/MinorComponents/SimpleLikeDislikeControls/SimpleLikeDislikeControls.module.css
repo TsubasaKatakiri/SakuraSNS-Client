@@ -1,0 +1,28 @@
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #000000;
+}
+
+.like, .dislike {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 20px;
+}
+.likeCount, .dislikeCount {
+  margin-left: 5px;
+}
+.like:hover, .dislike:hover {
+  color: #EE0B88;
+}
+
+.dislike {
+  margin-right: 0;
+}
+
+.night.wrapper {
+  color: #888888;
+}/*# sourceMappingURL=SimpleLikeDislikeControls.module.css.map */

@@ -1,0 +1,87 @@
+$dayBackground: #FFFFFF;
+$nightBackground: #181818;
+$dayText: #000000;
+$nightText: #EEEEEE;
+$highlight: #ee0b88;
+$border: #E5E5E5;
+$darkerBorder: #BBBBBB;
+$nightBorder: #666666;
+$hover: #E8E8E8; 
+$hoverNight: #383838;
+$dimText: #888888;
+$buttonBackground: #E0E0E0;
+$buttonText: #333333;
+$buttonNightBackground: #444444;
+$overlay: #000000e3;
+
+.infoTop{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+.content{
+    color: $dayText;
+}
+
+.logo, .controlsBlock{
+    display: flex;
+    align-items: center;
+}
+
+.logoIcon{
+    font-size: 22px !important;
+    color: $highlight;
+    margin-right: 10px;
+}
+
+.logoCaption{
+    font-size: 12pt;
+    font-weight: 500;
+    color: $highlight;
+}
+
+.control{
+    font-size: 11pt;
+    font-weight: 600;
+    cursor: pointer;
+    margin-left: 15px;
+    width: 70px;
+    text-align: right;
+    text-decoration: none;
+    color: $dayText;
+
+    &:hover{
+        color: $highlight;
+    }
+}
+
+.infoTop{
+    padding-bottom: 10px;
+    border-bottom: 1px solid $border;
+    margin-bottom: 10px;
+    transition: background-color 0.3s linear;
+}
+
+.infoBottom{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.night .control{
+    color: $dimText;
+
+    &:hover{
+        color: $highlight;
+    }
+}
+
+.night .infoTop{
+    border-bottom: 1px solid $nightBorder;
+    transition: background-color 0.3s linear;
+}

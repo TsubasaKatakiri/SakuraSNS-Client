@@ -1,0 +1,118 @@
+$dayBackground: #FFFFFF;
+$nightBackground: #181818;
+$dayText: #000000;
+$nightText: #EEEEEE;
+$highlight: #EE0B88;
+$border: #E5E5E5;
+$darkerBorder: #BBBBBB;
+$nightBorder: #666666;
+$hover: #E8E8E8; 
+$hoverNight: #383838;
+$dimText: #888888;
+
+.wrapper{
+    width: 100%;
+}
+
+.post{
+    width: 100%;
+    border-bottom: 1px solid #BBBBBB;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+}
+
+
+.header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-bottom: 15px;
+    justify-content: space-between;
+
+    &Info{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    &Time{
+        font-style: italic;
+        color: $dimText;
+        font-weight: 300;
+    }
+
+    &Controls{
+        display: flex;
+        align-items: center;
+    }
+}
+
+.control{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+
+    &:first-child{
+        margin-left: 0;
+    }
+
+    &Icon{
+        font-size: 14pt !important;
+        color: $nightBorder;
+    }
+
+    &:hover{
+        color: #ee0b88;
+    }
+    
+    &:hover &Icon{
+        color: #ee0b88;
+    }
+}
+
+.footer{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+
+    &Controls{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.tag{
+    font-weight: 400;
+    font-style: 13px;
+    margin-right: 15px;
+    color: $dayText;
+    cursor: pointer;
+    text-decoration: none;
+
+    &:hover{
+        color: $highlight;
+    }
+
+    &Line{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 5px 0 10px 0;
+    }
+}
+
+.night .tag{
+    color: $nightText;
+
+    &:hover{
+        color: $highlight;
+    }
+}
+
+.commentInfo{
+    font-weight: 400;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,135 @@
+$dayBackground: #FFFFFF;
+$nightBackground: #181818;
+$dayText: #000000;
+$nightText: #EEEEEE;
+$highlight: #ee0b88;
+$border: #E5E5E5;
+$darkerBorder: #BBBBBB;
+$nightBorder: #666666;
+$hover: #E8E8E8; 
+$hoverNight: #383838;
+
+.wrapper{
+    width: 240px;
+    padding: 10px 0;
+    padding-left: 10px;
+    position: sticky;
+    top: 60px;
+    height: calc(100vh - 60px);
+    font-family: 'Noto Sans Display', sans-serif;
+}
+
+.list{
+    list-style-type: none;
+    background-color: $dayBackground;
+    padding: 10px 0;
+    border: 1px solid $border;
+    transition: background-color 0.3s linear, color 0.3s linear;
+
+    &Item{
+        padding: 10px 20px;
+        position: relative;
+
+        &:before{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            height: 100%;
+            width: 5px;
+            content: '';
+        }
+
+        &:hover{
+            background-color: $hover;
+            color: $highlight;
+
+            .link{
+                color: $highlight;
+            }
+
+            &:before{
+                background-color: $highlight;
+            }
+        }
+    }
+}
+
+.link{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: $dayText;
+    text-decoration: none;
+
+    &Icon{
+        margin-right: 20px;
+        font-size: 20pt !important;
+    }
+
+    &Text{
+        font-size: 12pt;
+        font-weight: 400;
+    }
+}
+
+.night{
+    color: $nightText !important;
+    transition: background-color 0.3s linear, color 0.3s linear;
+
+    .list{
+        background-color: $nightBackground !important;
+        border-color: $nightBorder;
+
+        &Item{
+            &:hover{
+                background-color: $hoverNight;
+            }
+        }
+    }
+
+    .link{
+        color: $nightText;
+
+        &:hover{
+            color: $highlight;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .wrapper{
+        width: 80px;
+        padding: 10px 0;
+        flex: 0;
+    }
+
+    .list{
+        &Item{
+            padding: 5px 10px;
+        }
+    }
+
+    .link{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 15px;
+
+        &Icon{
+            margin-right: 0;
+            font-size: 28pt !important;
+        }
+    
+        &Text{
+            font-size: 9pt;
+            font-weight: 400;
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .wrapper{
+        height: calc(100vh - 50px);
+    }
+}

@@ -1,0 +1,103 @@
+$dayBackground: #FFFFFF;
+$nightBackground: #181818;
+$dayText: #000000;
+$nightText: #EEEEEE;
+$highlight: #ee0b88;
+$border: #E5E5E5;
+$darkerBorder: #BBBBBB;
+$nightBorder: #666666;
+$hover: #E8E8E8; 
+$hoverNight: #383838;
+$dimText: #888888;
+$buttonBackground: #E0E0E0;
+$buttonText: #333333;
+$buttonNightBackground: #444444;
+$overlay: #000000e3;
+
+.wrapper{
+    width: 100%;
+    height: 100%;
+    font-family: 'Noto Sans Display', sans-serif;
+}
+
+.infoSection{
+    width: 100%;
+    padding: 15px;
+    padding-bottom: 10px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid $border;
+    color: $dayText;
+    width: 100%;
+
+    &Text{
+        font-weight: 300;
+        font-size: 13pt;
+        margin-bottom: 5px;
+    }
+    
+    &Posted{
+        font-weight: 400;
+        color: $dimText;
+        font-size: 10pt;
+    }
+}
+
+.controls{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    padding-bottom: 10px;
+    border-bottom: 1px solid $border;
+}
+
+.control{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 15px;
+    text-decoration: none;
+    color: $dayText;
+
+    &:hover{
+        color: $highlight !important;
+    }
+
+    &Icon{
+        font-size: 14pt !important;
+        margin-right: 3px;
+    }
+    
+    &Caption{
+        font-size: 11pt;
+    }
+}
+
+.commentBlock{
+    width: 100%;
+    padding: 15px;
+    padding-top: 0;
+}
+
+.wrapper{
+    .info{
+        border-color: $nightBorder;
+        color: $dimText;
+    }
+
+    .controls{
+        border-color: $nightBorder;
+    }
+
+    .control{
+        color: $dimText;
+    }
+} 
+

@@ -1,0 +1,70 @@
+$dayBackground: #FFFFFF;
+$nightBackground: #181818;
+$dayText: #000000;
+$nightText: #EEEEEE;
+$highlight: #EE0B88;
+$border: #E5E5E5;
+$darkerBorder: #BBBBBB;
+$nightBorder: #666666;
+$hover: #E8E8E8; 
+$hoverNight: #383838;
+$dimText: #888888;
+$disabledBackground: #BBBBBB;
+
+
+
+.selectStyle{
+    margin: 10px 0;
+    border: 0;
+    outline: 0;
+    color: $dayText;
+    background-color: $dayBackground;
+    border-bottom: 1px solid $darkerBorder;
+    padding: 5px 15px;
+    width: 100%;
+    font-family: 'Noto Sans Display', sans-serif;
+    font-weight: 300;
+    font-size: 12pt;
+    font-style: italic;
+    transition: background-color 0.3s linear, color 0.3s linear, border-color 0.3s linear;
+
+    &:focus{
+        border-bottom: 1px solid $highlight;
+    }
+
+    &:disabled{
+        color: $hoverNight;
+        background-color: $disabledBackground;
+        border-bottom: 1px solid $darkerBorder;
+    }
+}
+
+.optionStyle{
+    font-style: italic;
+    font-weight: 300;
+    background-color: $dayBackground;
+    color: $dayText;
+}
+
+
+.night.selectStyle{
+    border-bottom: 1px solid $nightBorder;
+    background-color: $nightBackground;
+    color: $nightText;
+    transition: background-color 0.3s linear, color 0.3s linear, border-color 0.3s linear;
+
+    &:focus{
+        border-bottom: 1px solid $highlight;
+    }
+
+    &:disabled{
+        color: $dimText;
+        background-color:  $hoverNight;
+        border-bottom: 1px solid $nightBorder;
+    }
+}
+
+.night .optionStyle{
+    background-color: $nightBackground;
+    color: $nightText;
+}

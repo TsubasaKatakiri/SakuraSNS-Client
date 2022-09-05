@@ -1,0 +1,29 @@
+$dimText: #888888;
+$dayText: #000000;
+$nightText: #EEEEEE;
+
+.wrapper{
+    width: 100%;
+}
+
+.header{
+    font-weight: 400;
+    font-size: 14pt;
+    margin-bottom: 5px;
+    color: $dayText;
+    transition: color 0.3s linear;
+}
+
+.message{
+    display: block;
+    width: 100%;
+    font-size: 10pt;
+    font-weight: 400;
+    color: $dimText;
+    text-align: center;
+}
+
+.night .header{
+    color: $nightText;
+    transition: color 0.3s linear;
+}

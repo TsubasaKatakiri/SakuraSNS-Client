@@ -1,0 +1,76 @@
+$dayBackground: #FFFFFF;
+$nightBackground: #181818;
+$dayText: #000000;
+$nightText: #EEEEEE;
+$highlight: #EE0B88;
+$border: #E5E5E5;
+$darkerBorder: #BBBBBB;
+$nightBorder: #666666;
+$hover: #E8E8E8; 
+$hoverNight: #383838;
+$dimText: #888888;
+$buttonBackground: #E0E0E0;
+$buttonText: #333333;
+$buttonNightBackground: #444444;
+$buttonDisabled: #DDDDDD;
+
+.wrapper{
+    width: 340px;
+    padding: 10px;
+    padding-left: 0;
+    position: sticky;
+    top: 130px;
+    height: calc(100vh - 130px);
+    font-family: 'Noto Sans Display', sans-serif;
+}
+
+.content{
+    background-color: $dayBackground;
+    padding: 10px;
+    border: 1px solid $border;
+    transition: background-color 0.3s linear, color 0.3s linear, border-color 0.3s linear;
+}
+
+.header{
+    font-size: 13pt;
+    margin-bottom: 10px;
+}
+
+.form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.input{
+    margin: 5px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    &Header{
+        font-size: 12pt;
+        font-weight: 400;
+    }
+
+    &Caption{
+        font-size: 11pt;
+        font-weight: 400;
+    }
+}
+
+.buttonBlock{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.night .content{
+    background-color: $nightBackground;
+    color: $dimText;
+    border-color: $nightBorder;
+    transition: background-color 0.3s linear, color 0.3s linear, border-color 0.3s linear;
+}

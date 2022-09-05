@@ -1,0 +1,63 @@
+$dayBackground: #EEEEEE;
+$nightBackground: #282828;
+$dayLowerBackground: #F9F9F9;
+$nightLowerBackground: #222222;
+$dayText: #000000;
+$nightText: #EEEEEE;
+$highlight: #ee0b88;
+$dimText: #888888;
+
+.wrapper{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: $dayBackground;
+    color: $dayText;
+    transition: background-color 0.3s linear, color 0.3s linear;
+    font-family: 'Noto Sans Display', sans-serif;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+}
+
+.name{
+    font-size: 15pt;
+    font-weight: 500;
+}
+
+.controlGroup{
+    display: flex;
+    margin-left: 15px;
+}
+
+.statusIcon{
+    margin-left: 10px;
+    font-size: 14pt !important;
+    color: $highlight;
+}
+
+.control{
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    cursor: pointer;
+
+    &Icon{
+        font-size: 14pt !important;
+        margin-right: 5px;
+    }
+
+    &:hover{
+        color: $highlight;
+    }
+}
+
+.night.wrapper{
+    background-color: $nightBackground;
+    color: $dimText;
+    transition: background-color 0.3s linear, color 0.3s linear;
+}

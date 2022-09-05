@@ -1,0 +1,132 @@
+$dayBackground: #FFFFFF;
+$nightBackground: #181818;
+$dayText: #000000;
+$nightText: #EEEEEE;
+$highlight: #EE0B88;
+$border: #E5E5E5;
+$darkerBorder: #BBBBBB;
+$nightBorder: #666666;
+$hover: #E8E8E8; 
+$hoverNight: #383838;
+$dimText: #888888;
+$buttonBackground: #E0E0E0;
+$buttonText: #333333;
+$buttonNightBackground: #444444;
+$buttonDisabled: #DDDDDD;
+$warning: #EB0000;
+
+.wrapper{
+    position: relative;
+}
+
+.input{
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid $darkerBorder;
+    padding: 5px 15px;
+    margin-bottom: 15px;
+    width: 100%;
+    font-family: 'Noto Sans Display', sans-serif;
+    font-weight: 300;
+    font-size: 12pt;
+    transition: background-color 0.3s linear, color 0.3s linear, border-color 0.3s linear;
+
+    &:focus{
+        border-bottom: 1px solid $highlight;
+
+        &::placeholder{
+            color: $highlight;
+        }
+    }
+
+    &::placeholder{
+        font-family: 'Noto Sans Display', sans-serif;
+        color: $dimText;
+        font-size: 12pt;
+        font-style: italic;
+        font-weight: 300;
+        letter-spacing: 1px;
+    }
+}
+
+.results{
+    position: absolute;
+    top: 33px;
+    width: 100%;
+    background-color: $dayBackground;
+    border: 1px solid $darkerBorder;
+    border-top: 0;
+    z-index: 100;
+}
+
+.list{
+    list-style-type: none;
+}
+
+.entry{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+    padding: 5px;
+
+    &:hover{
+        background-color: $highlight;
+        color: $dayBackground;
+    }
+}
+
+.avatar{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid $darkerBorder;
+    background-color: $dayBackground;
+    margin-right: 10px;
+}
+
+.username{
+    font-family: 'Noto Sans Display', sans-serif;
+    margin-left: 10px;
+    font-size: 11pt;
+    font-weight: 600;
+}
+
+.night .results{
+    background-color: $nightBackground;
+    border: 1px solid $nightBorder;
+}
+
+.night .entry{
+    background-color: $nightBackground;
+    color: $nightText;
+    transition: background-color 0.3s linear, color 0.3s linear, border-color 0.3s linear;
+
+    &:hover{
+        background-color: $highlight;
+        color: $dayBackground;
+    }
+}
+
+.night .avatar{
+    border-color: $nightBorder;
+    background-color: $nightBackground;
+    transition: background-color 0.3s linear, color 0.3s linear, border-color 0.3s linear;
+}
+
+.night .input{
+    border-bottom: 1px solid $nightBorder;
+    background-color: $nightBackground;
+    color: $nightText;
+    transition: background-color 0.3s linear, color 0.3s linear, border-color 0.3s linear;
+
+    &:focus{
+        border-bottom: 1px solid $highlight;
+
+        &::placeholder{
+            color: $highlight;
+        }
+    }
+}

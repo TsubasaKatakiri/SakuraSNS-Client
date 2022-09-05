@@ -1,0 +1,89 @@
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Noto Sans Display', sans-serif;
+    width: 100%;
+}
+
+.pageHeader{
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex: 2;
+    min-width: 150px;
+}
+
+.logoIcon{
+    color: #ee0b88;
+    font-size: 28pt !important;
+    margin-right: 10px;
+}
+
+.logoText, .header{
+    font-weight: 200;
+    font-size: 20pt;
+    letter-spacing: 0.5px;
+}
+
+.search{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex: 8;
+}
+
+.controlGroup{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 2;
+}
+
+.control{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000000;
+}
+
+.control:hover{
+    color: #ee0b88;
+}
+
+.controlIcon{
+    font-size: 18pt;
+    margin-right: 5px;
+}
+
+.controlCaption{
+    font-style: 12pt;
+    font-weight: 500;
+}
+
+.body{
+    width: 100%;
+    padding: 10px;
+}
+
+.errorScreen{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.errorText{
+    color: #888888;
+    font-family: 'Noto Sans Display', sans-serif;
+    font-weight: 300;
+}

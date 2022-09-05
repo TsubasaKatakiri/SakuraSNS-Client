@@ -1,0 +1,6 @@
+export const GET_VIDEO_PROGRESS = 'GET_VIDEO_PROGRESS';
+export const GET_VIDEO_SUCCESS = 'GET_VIDEO_SUCCESS';
+export const GET_VIDEO_FAIL = 'GET_VIDEO_FAIL';
+export const ADD_VIDEO = 'ADD_VIDEO';
+export const REMOVE_VIDEO = 'REMOVE_VIDEO';
+export const RESET_VIDEOS = 'RESET_VIDEOS';

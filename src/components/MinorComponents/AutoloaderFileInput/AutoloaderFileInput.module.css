@@ -1,0 +1,17 @@
+.autoloaderContainer{
+    display: flex;
+    align-items: center;
+}
+
+.fileInput{
+    display: none;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+.progress{
+    font-family: 'Noto Sans Display', sans-serif;
+    font-size: 12pt;
+    color: #000000;
+}

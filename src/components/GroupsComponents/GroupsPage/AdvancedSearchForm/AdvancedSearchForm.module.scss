@@ -1,0 +1,202 @@
+$dayBackground: #FFFFFF;
+$nightBackground: #181818;
+$dayText: #000000;
+$nightText: #EEEEEE;
+$highlight: #EE0B88;
+$border: #E5E5E5;
+$darkerBorder: #BBBBBB;
+$nightBorder: #666666;
+$hover: #E8E8E8; 
+$hoverNight: #383838;
+$dimText: #888888;
+$buttonBackground: #E0E0E0;
+$buttonText: #333333;
+$buttonNightBackground: #444444;
+$buttonDisabled: #DDDDDD;
+
+.wrapper{
+    width: 340px;
+    padding: 10px;
+    padding-left: 0;
+    position: sticky;
+    top: 130px;
+    height: calc(100vh - 130px);
+    font-family: 'Noto Sans Display', sans-serif;
+}
+
+.content{
+    background-color: $dayBackground;
+    padding: 10px;
+    border: 1px solid $border;
+    transition: background-color 0.3s linear, color 0.3s linear, border-color 0.3s linear;
+}
+
+.header{
+    font-size: 13pt;
+    margin-bottom: 10px;
+}
+
+.form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.input{
+    margin: 5px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    &Header{
+        font-size: 12pt;
+        font-weight: 400;
+    }
+
+    &Caption{
+        font-size: 11pt;
+        font-weight: 400;
+    }
+
+    &Style{
+        margin: 5px 0;
+        border: 0;
+        outline: 0;
+        border-bottom: 1px solid $darkerBorder;
+        padding: 5px 15px;
+        width: 100%;
+        font-family: 'Noto Sans Display', sans-serif;
+        font-weight: 300;
+        font-size: 12pt;
+        transition: background-color 0.3s linear, color 0.3s linear, border-color 0.3s linear;
+
+        &:focus{
+            border-bottom: 1px solid $highlight;
+
+            &::placeholder{
+                color: $highlight;
+            }
+        }
+
+        &::placeholder{
+            font-family: 'Noto Sans Display', sans-serif;
+            color: $dimText;
+            font-size: 12pt;
+            font-style: italic;
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+    }
+}
+
+.buttonBlock{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.button{
+    font-weight: 100;
+    font-size: 12pt;
+    padding: 12px 0;
+    width: 150px;
+    cursor: pointer;
+    text-align: center;
+    border: 0;
+    outline: 0;
+    color: $buttonText;
+    background-color: $buttonBackground;
+
+    &:hover{
+        color: $dayBackground;
+        background-color: $highlight;
+    }
+
+    &:disabled{
+        color: $buttonDisabled;
+        background-color: $dimText;
+        cursor: default;
+    }
+}
+
+.selectStyle{
+    margin: 10px 0;
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid $darkerBorder;
+    padding: 5px 15px;
+    width: 100%;
+    font-family: 'Noto Sans Display', sans-serif;
+    font-weight: 300;
+    font-size: 12pt;
+    font-style: italic;
+    transition: background-color 0.3s linear, color 0.3s linear, border-color 0.3s linear;
+
+    &:focus{
+        border-bottom: 1px solid $highlight;
+    }
+}
+
+.optionStyle{
+    font-style: italic;
+    font-weight: 300;
+    background-color: $dayBackground;
+    color: $dayText;
+}
+
+.night .content{
+    background-color: $nightBackground;
+    color: $dimText;
+    border-color: $nightBorder;
+    transition: background-color 0.3s linear, color 0.3s linear, border-color 0.3s linear;
+}
+
+.night .inputStyle{
+    border-bottom: 1px solid $nightBorder;
+    color: $nightText;
+    background-color: $nightBackground;
+    transition: background-color 0.3s linear, color 0.3s linear, border-color 0.3s linear;
+
+    &:focus{
+        border-bottom: 1px solid $highlight;
+
+        &::placeholder{
+            color: $highlight;
+        }
+    }
+}
+
+.night .button{
+    color: $nightText;
+    background-color: $buttonNightBackground;
+
+    &:hover{
+        color: $dayBackground;
+        background-color: $highlight;
+    }
+
+    &:disabled{
+        color: $buttonNightBackground;
+        background-color: $dimText;
+        cursor: default;
+    }
+}
+
+.night .selectStyle{
+    border-bottom: 1px solid $nightBorder;
+    background-color: $nightBackground;
+    color: $nightText;
+    transition: background-color 0.3s linear, color 0.3s linear, border-color 0.3s linear;
+
+    &:focus{
+        border-bottom: 1px solid $highlight;
+    }
+}
+
+.night .optionStyle{
+    background-color: $nightBackground;
+    color: $nightText;
+}

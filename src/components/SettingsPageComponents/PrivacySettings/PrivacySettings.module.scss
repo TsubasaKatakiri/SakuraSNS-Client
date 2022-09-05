@@ -1,0 +1,42 @@
+$dayText: #000000;
+$nightText: #EEEEEE;
+$darkerBorder: #BBBBBB;
+$nightBorder: #666666;
+
+.wrapper{
+    margin: 10px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: 'Noto Sans Display', sans-serif;
+    border-top: 1px solid $darkerBorder;
+    border-bottom: 1px solid $darkerBorder;
+    color: $dayText;
+    transition: color 0.3s linear, border-color 0.3s linear;
+}
+
+.category{
+    margin: 10px 0;
+    width: 100%;
+
+    &Header{
+        font-size: 15pt;
+        font-weight: 300;
+        letter-spacing: 0.5px;
+        margin-bottom: 5px;
+    }
+    
+    &Caption{
+        font-weight: 300;
+        font-size: 11pt;
+        margin-bottom: 5px;
+    }
+}
+
+.night.wrapper{
+    color: $nightText;
+    border-top: 1px solid $nightBorder;
+    border-bottom: 1px solid $nightBorder;
+    transition: color 0.3s linear, border-color 0.3s linear;
+}

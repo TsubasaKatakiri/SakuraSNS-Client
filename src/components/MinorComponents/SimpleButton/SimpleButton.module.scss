@@ -1,0 +1,57 @@
+$buttonText: #333333;
+$buttonBackground: #E0E0E0;
+$highlightText: #FFFFFF;
+$highlight: #EE0B88;
+$buttonNightText: #EEEEEE;
+$buttonNightBackground: #444444;
+$buttonDisabledText: #DDDDDD;
+$buttonDisabledBackground: #888888;
+
+.button{
+    font-weight: 100;
+    font-size: 12pt;
+    padding: 12px 0;
+    width: 150px;
+    margin-right: 10px;
+    cursor: pointer;
+    text-align: center;
+    border: 0;
+    outline: 0;
+    color: $buttonText;
+    background-color: $buttonBackground;
+
+    &:only-child{
+        margin: 0;
+    }
+
+    &:last-child{
+        margin-right: 0;
+    }
+
+    &:hover{
+        color: $highlightText;
+        background-color: $highlight;
+    }
+
+    &:disabled{
+        color: $buttonDisabledText;
+        background-color: $buttonDisabledBackground;
+        cursor: default;
+    }
+}
+
+.night.button{
+    color: $buttonNightText;
+    background-color: $buttonNightBackground;
+
+    &:hover{
+        color: $highlightText;
+        background-color: $highlight;
+    }
+
+    &:disabled{
+        color: $buttonNightBackground;
+        background-color: $buttonDisabledBackground;
+        cursor: default;
+    }
+}

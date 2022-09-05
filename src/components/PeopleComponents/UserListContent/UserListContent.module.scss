@@ -1,0 +1,14 @@
+$dimText: #888888;
+
+.wrapper{
+    width: 100%;
+}
+
+.message{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 14pt;
+    font-weight: 400;
+    color: $dimText;
+}

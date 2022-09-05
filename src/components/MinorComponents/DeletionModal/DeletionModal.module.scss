@@ -1,0 +1,73 @@
+$dayBackground: #FFFFFF;
+$nightBackground: #181818;
+$dayText: #000000;
+$nightText: #EEEEEE;
+$highlight: #ee0b88;
+$border: #E5E5E5;
+$darkerBorder: #BBBBBB;
+$nightBorder: #666666;
+$hover: #E8E8E8; 
+$hoverNight: #383838;
+$dimText: #888888;
+$buttonBackground: #E0E0E0;
+$buttonText: #333333;
+$buttonNightBackground: #444444;
+$overlay: #000000e3;
+
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $overlay;
+    z-index: 1000;
+}
+
+.modal{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    border: 0;
+    transform: translate(-50%, -50%);
+    background-color: $dayBackground;
+    color: $dayText;
+    min-width: 500px;
+    padding: 15px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    transition: background-color 0.3s linear, color 0.3s linear;
+}
+
+.header, .main{
+    border-bottom: 1px solid $border;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    transition: border-color 0.3s linear;
+}
+
+.headerText{
+    font-weight: 300;
+    font-size: 16pt;
+}
+
+.caption{
+    font-weight: 300;
+}
+
+.footer{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.night.modal{
+    background-color: $nightBackground;
+    color: $dimText;
+    transition: background-color 0.3s linear, color 0.3s linear;
+}
+
+.night .header, .night .main{
+    border-bottom: 1px solid $nightBorder;
+    transition: border-color 0.3s linear;
+}

@@ -1,0 +1,150 @@
+$dayBackground: #FFFFFF;
+$nightBackground: #181818;
+$dayText: #000000;
+$nightText: #EEEEEE;
+$highlight: #ee0b88;
+$dayBackgroundHover: #F4F4F4;
+$dayBackgroundActive: #E8E8E8;
+$border: #E5E5E5;
+$darkerBorder: #BBBBBB;
+$nightBorder: #666666;
+$hover: #E8E8E8; 
+$hoverNight: #383838;
+$dimText: #888888;
+$buttonBackground: #E0E0E0;
+$buttonText: #333333;
+$buttonNightBackground: #444444;
+
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    padding: 5px;
+    cursor: pointer;
+    background-color: $dayBackground;
+    width: calc((100% / 4) - 10px);
+    font-family: 'Noto Sans Display', sans-serif;
+    align-self: stretch;
+    transition: background-color 0.3s linear;
+
+    &:hover{
+        background-color: $dayBackgroundHover;
+    }
+    
+    &:active{
+        background-color: $dayBackgroundActive;
+    }
+}
+
+@media screen and (max-width: 1250px){
+    .wrapper{
+        width: calc((100% / 3) - 10px);
+    }
+}
+
+@media screen and (max-width: 880px){
+    .wrapper{
+        width: calc((100% / 2) - 10px);
+    }
+}
+
+.preview{
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+
+    &Container{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $dayText;
+        margin-bottom: 10px;
+    }
+}
+
+.infoBlock{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+}
+
+.author{
+    margin-right: 10px;
+}
+
+.avatar{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid $darkerBorder;
+
+    &:hover{
+        border: 3px solid $highlight !important;
+    }
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.name{
+    font-size: 11.5pt;
+    font-weight: 600;
+    color: $dayText;
+    width: 100%;
+    margin-bottom: 5px;
+    -webkit-line-clamp: 2; 
+    display: -webkit-box; 
+    -webkit-box-orient: vertical; 
+    overflow: hidden;
+    transition: color 0.3s linear;
+}
+
+.uploader{
+    font-size: 11pt;
+    font-weight: 400;
+    color: $dayText;
+    text-decoration: none;
+    margin-bottom: 5px;
+    cursor: pointer;
+    transition: color 0.3s linear;
+
+    &:hover{
+        color: $highlight;
+    }
+}
+
+.stat{
+    font-size: 11pt;
+    font-weight: 400;
+    color: $dimText;
+    margin-right: 6px;
+}
+
+.night.wrapper{
+    background-color: $nightBackground;
+    transition: background-color 0.3s linear;
+
+    &:hover{
+        background-color: $hoverNight;
+    }
+
+    &:active{
+        background-color: $buttonText;
+    }
+}
+
+.night .avatar{
+    border: 3px solid $nightBorder;
+}
+
+.night .name, .night .uploader{
+    color: $nightText;
+    transition: color 0.3s linear;
+}

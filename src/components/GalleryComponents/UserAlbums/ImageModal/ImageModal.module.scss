@@ -1,0 +1,70 @@
+$dayBackground: #FFFFFF;
+$nightBackground: #181818;
+$dayText: #000000;
+$nightText: #EEEEEE;
+$highlight: #ee0b88;
+$border: #E5E5E5;
+$darkerBorder: #BBBBBB;
+$nightBorder: #666666;
+$dimText: #888888;
+$navBackground: #00000065;
+$navHoverBackground: #0000009f;
+$navColor: rgba(196, 196, 196, 0.726);
+
+.image{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+    &Section{
+        width: calc(100% - 380px);
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $dayText;
+        color: $dayBackground;
+    }
+    
+    &Container{
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+
+    &Content{
+        width: 380px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        overflow-y: auto;
+    }
+}
+
+.navLink{
+    position: absolute;
+    top: 50%;
+}
+
+.navLeft{
+    left: 10px;
+}
+
+.navRight{
+    right: 10px;
+}
+
+.navIcon{
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 50%;
+    color: $navColor;
+    background-color: $navBackground;
+
+    &:hover{
+        color: $dayBackground;
+        background-color: $navHoverBackground;
+    }
+}

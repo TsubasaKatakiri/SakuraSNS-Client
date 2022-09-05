@@ -1,0 +1,50 @@
+$dayBackground: #FFFFFF;
+$nightBackground: #181818;
+$dayLowerBackground: #F9F9F9;
+$nightLowerBackground: #222222;
+$dayText: #000000;
+$nightText: #EEEEEE;
+$highlight: #ee0b88;
+$border: #E5E5E5;
+$darkerBorder: #BBBBBB;
+$nightBorder: #666666;
+$dimText: #888888;
+
+.wrapper{
+    position: sticky;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: $dayLowerBackground;
+    transition: background-color 0.3s linear;
+    z-index: 10;
+}
+
+.content{
+    margin: 0 10px;
+    padding: 10px 20px;
+    height: 80px;
+    background-color: $dayBackground;
+    color: $dayText;
+    border: 1px solid $border;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color 0.3s linear, color 0.3s linear, border-color 0.3s linear;
+}
+
+.night.wrapper{
+    background-color: $nightLowerBackground;
+    transition: background-color 0.3s linear;
+}
+
+.night .content{
+    background-color: $nightBackground;
+    color: $nightText;
+    border: 1px solid $nightBorder;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color 0.3s linear, color 0.3s linear, border-color 0.3s linear;
+}

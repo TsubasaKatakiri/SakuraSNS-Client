@@ -1,0 +1,21 @@
+.wrapper{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.paginatorItem{
+    font-size: 13pt;
+    font-weight: 500;
+    color: #000000;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.paginatorItem:hover{
+    color: #ee0b88;
+}
+
+.active{
+    color: #ee0b88;
+}

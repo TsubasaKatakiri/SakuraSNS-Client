@@ -1,0 +1,155 @@
+$dayBackground: #FFFFFF;
+$nightBackground: #181818;
+$dayText: #000000;
+$nightText: #EEEEEE;
+$highlight: #ee0b88;
+$dimText: #888888;
+$border: #E5E5E5;
+$darkerBorder: #BBBBBB;
+$nightBorder: #666666;
+$hover: #E8E8E8; 
+$hoverNight: #383838;
+$buttonBackground: #E0E0E0;
+$buttonText: #333333;
+$buttonNightBackground: #444444;
+$overlay: #000000e3;
+
+.wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    background-color: $dayBackground;
+    color: $dayText;
+    border-bottom: 1px solid $border;
+    transition: border-color 0.3s linear, color 0.3s linear, background-color 0.3s linear;
+    cursor: pointer;
+
+    &:last-child{
+        border-bottom: 0;
+    }
+
+    &:hover{
+        background-color: $hover;
+    }
+}
+
+.trackIndex{
+    font-size: 11pt;
+    width: 40px;
+}
+
+.trackData, .trackControls{
+    width: calc((100% / 2) - 40px);
+}
+
+.trackData{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.current{
+    color: $highlight !important;
+}
+
+.trackName, .trackArtist{
+    display: block;
+    font-size: 11pt;
+    font-weight: 400;
+}
+
+.trackArtist{
+    font-weight: 700;
+}
+
+.trackControls{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.trackId{
+    color: $dimText;
+    font-weight: 400;
+    font-size: 11pt;
+    font-style: italic;
+}
+
+.controlsContainer{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.trackAdditionalInfo{
+    margin-right: 10px;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+
+    &Icon{
+        font-size: 14pt !important;
+        margin-right: 10px;
+    }
+    
+    &Text{
+        font-weight: 600;
+        font-size: 11pt;
+    }
+}
+
+.controls{
+    display: flex;
+    align-items: center;
+}
+
+.control, .controlFavorite{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+
+    &:hover{
+        color: $highlight !important;
+    }
+
+    &Icon{
+        font-size: 14pt !important;
+        margin-right: 5px;
+    }
+    
+    &Caption{
+        font-weight: 600;
+        font-size: 11pt;
+    }
+}
+
+.controlFavorite{
+    margin-right: 0;
+}
+
+.night.wrapper{
+    background-color: $nightBackground;
+    color: $dimText;
+    border-bottom: 1px solid $nightBorder;
+    transition: border-color 0.3s linear, color 0.3s linear, background-color 0.3s linear;
+
+    &:last-child{
+        border-bottom: 0;
+    }
+
+    &:hover{
+        background-color: $hoverNight;
+    }
+}
+
+.modalActive{
+    overflow-y: hidden;
+}

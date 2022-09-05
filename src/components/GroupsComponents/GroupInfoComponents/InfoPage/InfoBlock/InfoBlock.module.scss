@@ -1,0 +1,64 @@
+$dayBackground: #FFFFFF;
+$nightBackground: #181818;
+$dayLowerBackground: #F9F9F9;
+$nightLowerBackground: #222222;
+$dayText: #000000;
+$nightText: #EEEEEE;
+$highlight: #ee0b88;
+$border: #E5E5E5;
+$darkerBorder: #BBBBBB;
+$nightBorder: #666666;
+$dimText: #888888;
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 15px 0;
+    padding-top: 5px;
+    border-bottom: 1px solid $border;
+    transition: border-color 0.3s linear;
+}
+
+.name{
+    font-weight: 500;
+    font-size: 16pt;
+}
+
+.infoString{
+    font-size: 11pt;
+    font-weight: 400;
+    color: $dimText;
+    margin-right: 20px;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 15px;
+}
+
+.description{
+    font-weight: 300;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+.image{
+    width: 100%;
+    max-width: 900px;
+}
+
+.night .header {
+    border-color: $nightBorder;
+    background-color: $nightBackground;
+    color: $nightText;
+    transition: border-color 0.3s linear;
+}
