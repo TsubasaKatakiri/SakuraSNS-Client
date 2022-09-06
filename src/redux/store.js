@@ -1,43 +1,5 @@
 import { combineReducers, createStore, applyMiddleware } from "redux";
 import thunk from "redux-thunk";
-// import UserAlbumReducer from "./AlbumGalleryReducer";
-// import UserAlbumsReducer from "./AlbumsGalleryReducer";
-// import GalleryAudioReducer from "./AudioGalleryReducer";
-// import AudioReducer from "./AudioReducer";
-// import AuthReducer from "./AuthReducer";
-// import BlacklistReducer from "./BlacklistReducer";
-// import ChatReducer from "./ChatReducer";
-// import CurrentFeedPostReducer from "./CurrentFeedPostReducer";
-// import CurrentVideoReducer from "./CurrentVideoReducer";
-// import FeedReducer from "./FeedReducer";
-// import GalleryReducer from "./GalleryReducer";
-// import GroupAlbumReducer from "./GroupAlbumReducer";
-// import GroupAlbumsReducer from "./GroupAlbumsReducer";
-// import DiscussionReducer from "./GroupDiscussionReducer";
-// import EventReducer from "./GroupEventReducer";
-// import GroupFeedReducer from "./GroupFeedReducer";
-// import GroupImageReducer from "./GroupImageReducer";
-// import GroupInfoReducer from "./GroupInfoReducer";
-// import GroupMediaReducer from "./GroupMediaReducer";
-// import GroupContentReducer from "./GroupContentReducer";
-// import GroupMembersReducer from "./GroupMembersReducer";
-// import GroupMusicReducer from "./GroupMusicReducer";
-// import GroupReducer from "./GroupReducer";
-// import GroupSearchReducer from "./GroupSearchReducer";
-// import GroupVideoReducer from "./GroupVideoReducer";
-// import ImageGalleryReducer from "./ImageGalleryReducer";
-// import PeopleReducer from "./PeopleReducer";
-// import PostReducer from "./PostReducer";
-// import ProfileReducer from "./ProfileReducer";
-// import UserMediaReducer from "./UserMediaReducer";
-// import GalleryVideoReducer from "./VideoGalleryReducer";
-// import VideoReducer from "./VideoReducer";
-// import VideoSearchReducer from "./VideoSearchReducer";
-// import GroupEventsReducer from "./GroupEventsReducer";
-// import GroupInfoListReducer from "./GroupInfoListReducer";
-// import DiscussionListReducer from "./GroupDiscussionsListReducer";
-// import CurrentDiscussionReducer from "./GroupCurrentDiscussionReducer";
-// import DiscussionPostReducer from "./GroupDiscussionPostReducer";
 import AuthReducer from './Auth/AuthReducer';
 import ChatReducer from './Chat/ChatReducer';
 import ProfileReducer from './Profile/ProfileReducer';
@@ -84,8 +46,6 @@ let reducers = combineReducers({
     video: VideoReducer,
     currentVideo: CurrentVideoReducer,
     videoSearch: VideoSearchReducer,
-    // gallery: GalleryReducer,
-    // imageGallery: ImageGalleryReducer,
     galleryAudio: GalleryAudioReducer,
     galleryVideo: GalleryVideoReducer,
     galleryAlbums: UserAlbumsReducer,

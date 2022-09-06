@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 import { useParams } from 'react-router-dom';
-import { getProfile, resetProfile } from '../../../redux/ProfileReducer';
+import { getProfile, resetProfile } from '../../../redux/Profile/ProfileActions';
 import { checkUserPrivacy } from '../../../util/CheckUserPrivacy';
 import LockPage from '../LockPage/LockPage';
 import Preloader from '../Preloader/Preloader';

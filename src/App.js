@@ -1,6 +1,6 @@
 import './App.css';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { getToken, loginUser, getUserInfo } from './redux/AuthReducer';
+import { getToken, loginUser, getUserInfo } from './redux/Auth/AuthActions';
 import { connect } from 'react-redux';
 import { useEffect } from 'react';
 import { AuthAPI } from './api/AuthApi';
